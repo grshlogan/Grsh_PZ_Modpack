@@ -23,7 +23,7 @@
 
 - 需要：无
 - 互斥：无
-- 被依赖：`GridRV`、`DaleChieftainRV`、`DeadWorksDaleRV`、`DeadWorksNomadRV`
+- 被依赖：`GridRV`、`DaleChieftainRV`、`DeadWorksDaleRV`、`DeadWorksNomadRV`、`DeadWorksVehicleFramework`、`GridVans`
 
 ## 内容清单
 

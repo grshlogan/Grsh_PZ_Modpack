@@ -23,7 +23,7 @@
 
 - 需要：无
 - 互斥：无
-- 被依赖：`Viewpoint`、`ViewpointSurface`、`BasileDoors3D`、`ViewpointLivingProps`、`ProjectViewpointShelves`、`aparosa_vpmo_RaccoonCityB42`、`PV-modmapbakefix`、`GridRVHost`、`GridRV`、`ViewpointKI5Materials`、`ProjectViewpoint-KI5VehiclePartsFix`、`ViewpointVehicleShellFix`、`ViewpointPartPaint`、`PzPerformanceFixes`、`SuPerfCore`、`LaoYuTranslationJava`
+- 被依赖：`Viewpoint`、`ViewpointSurface`、`BasileDoors3D`、`ViewpointLivingProps`、`ProjectViewpointShelves`、`aparosa_vpmo_RaccoonCityB42`、`PV-modmapbakefix`、`GridRVHost`、`GridRV`、`ViewpointKI5Materials`、`ProjectViewpoint-KI5VehiclePartsFix`、`ViewpointVehicleShellFix`、`ViewpointPartPaint`、`PzPerformanceFixes`、`SuPerfCore`、`LaoYuTranslationJava`、`DeadWorksVehicleFramework`、`GridVansHost`、`GridVans`
 
 ## 内容清单
 

@@ -1,6 +1,6 @@
 # 载具资源库（that DAMN Library）
 
-**KI5载具公共资源** · 分类：框架 / 素材 · 3171167894 · 启用 · 加载位次 19
+**KI5载具公共资源** · 分类：框架 / 素材 · 3171167894 · 启用 · 加载位次 23
 
 ## 它做什么
 
@@ -23,7 +23,7 @@ KI5 系列载具共用的资源库：车门、引擎盖、轮胎等 276 条零�
 
 - 需要：无
 - 互斥：无
-- 被依赖：`ViewpointKI5Materials`
+- 被依赖：`ViewpointKI5Materials`、`KI5trailers`、`isoContainers`、`92amgeneralM998`、`70dodge`、`91range`、`88chevyS10`、`92nissanGTR`、`84mercW460`、`87fordB700`、`90fordF350ambulance`、`86fordE150`、`78amgeneralM35A2`、`82jeepJ10`
 
 ## 内容清单
 

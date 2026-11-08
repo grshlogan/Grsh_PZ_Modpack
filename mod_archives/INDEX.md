@@ -1,6 +1,6 @@
 # play 包 mod 档案索引
 
-共 40 个条目（启用 38，禁用 2），合计 1.9 GB、脚本物品 315 条。
+共 57 个条目（启用 54，禁用 3），合计 2.2 GB、脚本物品 872 条。
 结构见 [_TEMPLATE.md](_TEMPLATE.md)；文件名为 `<steam_id>_<模组原名>_<模组中文介绍>.md`。
 
 | # | 中文名 | mod | 工作坊 ID | 分类 | 体积 | 物品 | 状态 | 档案 |
@@ -18,11 +18,11 @@
 | 11 | KK 3D 货架 | Project Viewpoint: KK's Shelves in 3D | `3815931973` | 渲染 / 模型 | 176.3 MB | 0 | 启用 | [3815931973_Project_Viewpoint_KKs_Shelves_in_3D_货架按库存显示空轻满.md](3815931973_Project_Viewpoint_KKs_Shelves_in_3D_货架按库存显示空轻满.md) |
 | 12 | 浣熊市家具贴图 | Project Viewpoint Map Mod Furniture - Sprite Edition | `3816419379` | 素材 / 地图 | 9.4 MB | 0 | 启用 | [3816419379_Project_Viewpoint_Map_Mod_Furniture_-_Sprite_Edition_地图家具3D化.md](3816419379_Project_Viewpoint_Map_Mod_Furniture_-_Sprite_Edition_地图家具3D化.md) |
 | 13 | 地图烘焙修复 | Project Viewpoint: General Mod Map Fix | `3813929757` | 修复 / 地图 | 25.8 KB | 0 | 启用 | [3813929757_Project_Viewpoint_General_Mod_Map_Fix_烘焙贴图修正.md](3813929757_Project_Viewpoint_General_Mod_Map_Fix_烘焙贴图修正.md) |
-| 14 | 网格房车后端 | Grid RV Host backend (Legacy) | `3820158673` | 框架 / 载具 | 106.9 KB | 0 | 启用 | [3820158673_Grid_RV_Host_backend_Legacy_房车系统后端库.md](3820158673_Grid_RV_Host_backend_Legacy_房车系统后端库.md) |
-| 15 | 游牧网格房车 | Nomad Grid RV (Legacy) | `3820158673` | 载具 / 建造 | 92.1 MB | 15 | 启用 | [3820158673_Nomad_Grid_RV_Legacy_可建造移动房车.md](3820158673_Nomad_Grid_RV_Legacy_可建造移动房车.md) |
-| 16 | 酋长房车 | Dale's Chieftain RV (Legacy) | `3820158673` | 载具 | 172.8 MB | 0 | 启用 | [3820158673_Dales_Chieftain_RV_Legacy_大型房车载具.md](3820158673_Dales_Chieftain_RV_Legacy_大型房车载具.md) |
-| 17 | 废弃酋长房车 | Dale's Chieftain RV | `3820158673` | 载具 / 可选 | 53.5 MB | 0 | 禁用 | [3820158673_Dales_Chieftain_RV_房车残骸替换件.md](3820158673_Dales_Chieftain_RV_房车残骸替换件.md) |
-| 18 | 废弃游牧房车 | Nomad RV | `3820158673` | 载具 / 可选 | 56.6 MB | 24 | 禁用 | [3820158673_Nomad_RV_房车残骸替换件.md](3820158673_Nomad_RV_房车残骸替换件.md) |
+| 14 | 网格房车后端 | Grid RV Host backend (Legacy) | `3820158673` | 框架 / 载具 | 106.9 KB | 0 | 禁用 | [3820158673_Grid_RV_Host_backend_Legacy_房车系统后端库.md](3820158673_Grid_RV_Host_backend_Legacy_房车系统后端库.md) |
+| 15 | 游牧网格房车 | Nomad Grid RV (Legacy) | `3820158673` | 载具 / 建造 | 92.1 MB | 15 | 禁用 | [3820158673_Nomad_Grid_RV_Legacy_可建造移动房车.md](3820158673_Nomad_Grid_RV_Legacy_可建造移动房车.md) |
+| 16 | 酋长房车 | Dale's Chieftain RV (Legacy) | `3820158673` | 载具 | 172.8 MB | 0 | 禁用 | [3820158673_Dales_Chieftain_RV_Legacy_大型房车载具.md](3820158673_Dales_Chieftain_RV_Legacy_大型房车载具.md) |
+| 17 | 废弃酋长房车 | Dale's Chieftain RV | `3820158673` | 载具 / 可选 | 53.5 MB | 0 | 启用 | [3820158673_Dales_Chieftain_RV_房车残骸替换件.md](3820158673_Dales_Chieftain_RV_房车残骸替换件.md) |
+| 18 | 废弃游牧房车 | Nomad RV | `3820158673` | 载具 / 可选 | 56.6 MB | 24 | 启用 | [3820158673_Nomad_RV_房车残骸替换件.md](3820158673_Nomad_RV_房车残骸替换件.md) |
 | 19 | 载具资源库 | that DAMN Library | `3171167894` | 框架 / 素材 | 40.3 MB | 276 | 启用 | [3171167894_that_DAMN_Library_KI5载具公共资源.md](3171167894_that_DAMN_Library_KI5载具公共资源.md) |
 | 20 | 通用函数库 | Yet Another PZ Library | `3624971238` | 框架 | 90.2 KB | 0 | 启用 | [3624971238_Yet_Another_PZ_Library_KI5脚本依赖库.md](3624971238_Yet_Another_PZ_Library_KI5脚本依赖库.md) |
 | 21 | KI5 血迹贴图修复 | Project Viewpoint - KI5 Blood Texture Fix | `3819702412` | 渲染 / 修复 | 72.1 KB | 0 | 启用 | [3819702412_Project_Viewpoint_-_KI5_Blood_Texture_Fix_KI5_车血迹材质修正.md](3819702412_Project_Viewpoint_-_KI5_Blood_Texture_Fix_KI5_车血迹材质修正.md) |
@@ -45,6 +45,23 @@
 | 38 | 老余汉化JAVA版 | 老余汉化JAVA版 | `3810637496` | 语言 / 汉化 | 2.9 MB | 0 | 启用 | [3810637496_老余汉化JAVA版_Java_界面简中汉化.md](3810637496_老余汉化JAVA版_Java_界面简中汉化.md) |
 | 39 | 统一模组汉化 | [B42]统一模组汉化 | `3556540080` | 汉化 | 39.1 MB | 0 | 启用 | [3556540080_B42统一模组汉化_模组文本汉化.md](3556540080_B42统一模组汉化_模组文本汉化.md) |
 | 40 | 统一中文汉化 | [B42]统一中文汉化 (排序置底) | `3556544454` | 汉化 | 765.1 MB | 0 | 启用 | [3556544454_B42统一中文汉化_排序置底_游戏本体文本汉化.md](3556544454_B42统一中文汉化_排序置底_游戏本体文本汉化.md) |
+| 41 | Trailers! 拖车合集 | Trailers! | `3330403100` | 载具 / 拖车 | 11.2 MB | 21 | 启用 | [3330403100_Trailers!_多用途拖车与货运挂车.md](3330403100_Trailers!_多用途拖车与货运挂车.md) |
+| 42 | Containers! 集装箱 | Containers! | `2625625421` | 载具 / 拖车 | 10.4 MB | 15 | 启用 | [2625625421_Containers!_可堆叠、可搬运的集装箱.md](2625625421_Containers!_可堆叠、可搬运的集装箱.md) |
+| 43 | M998 悍马 + M101A3 拖车 | '92 AM General M998 + M101A3 Trailer | `2642541073` | 载具 / 军用 | 21.8 MB | 60 | 启用 | [2642541073_92_AM_General_M998_+_M101A3_Trailer_军版悍马与货运拖车.md](2642541073_92_AM_General_M998_+_M101A3_Trailer_军版悍马与货运拖车.md) |
+| 44 | '70 Dodge Challenger | '70 Dodge Challenger | `2873290424` | 载具 / 轿车 | 18.2 MB | 39 | 启用 | [2873290424_70_Dodge_Challenger_70_年代美式肌肉车.md](2873290424_70_Dodge_Challenger_70_年代美式肌肉车.md) |
+| 45 | '91 Range Rover Classic | '91 RANGE ROVER Classic | `2409333430` | 载具 / 越野 | 18.1 MB | 36 | 启用 | [2409333430_91_RANGE_ROVER_Classic_经典英式越野_SUV.md](2409333430_91_RANGE_ROVER_Classic_经典英式越野_SUV.md) |
+| 46 | '88 Chevrolet S10 | '88 Chevrolet S10 | `2886832936` | 载具 / 卡车 | 9.5 MB | 22 | 启用 | [2886832936_88_Chevrolet_S10_紧凑型工作皮卡.md](2886832936_88_Chevrolet_S10_紧凑型工作皮卡.md) |
+| 47 | '92 Nissan Skyline GT-R R32 | '92 NISSAN Skyline GT-R (R32) | `2846036306` | 载具 / 轿车 | 18.1 MB | 47 | 启用 | [2846036306_92_NISSAN_Skyline_GT-R_R32_日系性能跑车.md](2846036306_92_NISSAN_Skyline_GT-R_R32_日系性能跑车.md) |
+| 48 | '84 Mercedes W460 | '84 Mercedes Benz W460 | `2805630347` | 载具 / 越野 | 26.8 MB | 66 | 启用 | [2805630347_84_Mercedes_Benz_W460_方盒子越野车.md](2805630347_84_Mercedes_Benz_W460_方盒子越野车.md) |
+| 49 | '87 Ford B700/F700 | '87 Ford B700/F700 Trucks | `3110911330` | 载具 / 卡车 | 30.0 MB | 64 | 启用 | [3110911330_87_Ford_B700F700_Trucks_中型卡车底盘.md](3110911330_87_Ford_B700F700_Trucks_中型卡车底盘.md) |
+| 50 | '90 Ford F350 救护车 | '90 Ford F350 Ambulance Type 1 | `2952802178` | 载具 / 公务 | 10.0 MB | 54 | 启用 | [2952802178_90_Ford_F350_Ambulance_Type_1_可当移动医疗点的救护车.md](2952802178_90_Ford_F350_Ambulance_Type_1_可当移动医疗点的救护车.md) |
+| 51 | '86 Ford Econoline E-150 | '86 Ford Econoline E150 | `2870394916` | 载具 / 卡车 | 27.4 MB | 63 | 启用 | [2870394916_86_Ford_Econoline_E150_厢式货车面包车.md](2870394916_86_Ford_Econoline_E150_厢式货车面包车.md) |
+| 52 | '78 AM General M35 军卡 | '78 AM General M35 Series Trucks | `2799152995` | 载具 / 军用 | 28.6 MB | 45 | 启用 | [2799152995_78_AM_General_M35_Series_Trucks_军用六驱卡车.md](2799152995_78_AM_General_M35_Series_Trucks_军用六驱卡车.md) |
+| 53 | '82 Jeep J10 | '82 Jeep J10 | `2886832257` | 载具 / 越野 | 12.5 MB | 25 | 启用 | [2886832257_82_Jeep_J10_全尺寸皮卡.md](2886832257_82_Jeep_J10_全尺寸皮卡.md) |
+| 54 | DeadWorks 房车框架 | DeadWorks Vehicle Framework | `3825724093` | 载具 / 房车 | 437.4 KB | 0 | 启用 | [3825724093_DeadWorks_Vehicle_Framework_新代_3D_房车的内饰水电家具内核.md](3825724093_DeadWorks_Vehicle_Framework_新代_3D_房车的内饰水电家具内核.md) |
+| 55 | 3D RV Van 服务端后端 | 3D Vans Host backend | `3821174725` | 载具 / 房车 | 107.6 KB | 0 | 启用 | [3821174725_3D_Vans_Host_backend_厢货车厢与家具的服务端权威.md](3821174725_3D_Vans_Host_backend_厢货车厢与家具的服务端权威.md) |
+| 56 | 3D RV Van 厢货 | Viewpoint - 3D RV Van | `3821174725` | 载具 / 房车 | 54.4 MB | 0 | 启用 | [3821174725_Viewpoint_-_3D_RV_Van_可自行装修的_3D_厢式房车.md](3821174725_Viewpoint_-_3D_RV_Van_可自行装修的_3D_厢式房车.md) |
+| 57 | DeadWorks 框架沙盒页 | DeadWorks Vehicle Framework Tweaks | `3826684062` | 载具 / 房车 | 510.6 KB | 0 | 启用 | [3826684062_DeadWorks_Vehicle_Framework_Tweaks_装甲水箱电池车重可调.md](3826684062_DeadWorks_Vehicle_Framework_Tweaks_装甲水箱电池车重可调.md) |
 
 ## 查物品 id
 
