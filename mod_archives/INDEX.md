@@ -1,6 +1,6 @@
 # play 包 mod 档案索引
 
-共 31 个条目（启用 29，禁用 2），合计 1.6 GB、脚本物品 315 条。
+共 31 个条目（启用 28，禁用 3），合计 1.6 GB、脚本物品 315 条。
 结构见 [_TEMPLATE.md](_TEMPLATE.md)；文件名为 `<steam_id>_<模组原名>_<模组中文介绍>.md`。
 
 | # | 中文名 | mod | 工作坊 ID | 分类 | 体积 | 物品 | 状态 | 档案 |
@@ -30,7 +30,7 @@
 | 23 | Neat制作 | Neat Crafting [B42.12] | `3502080466` | UI / 制作 | 4.1 MB | 0 | 启用 | [3502080466_Neat_Crafting_B42.12_制作界面重制.md](3502080466_Neat_Crafting_B42.12_制作界面重制.md) |
 | 24 | 烹饪重制 | Project Cook [Legacy] | `3490188370` | 玩法 / 制作 | 7.6 MB | 0 | 启用 | [3490188370_Project_Cook_Legacy_烹饪系统重做.md](3490188370_Project_Cook_Legacy_烹饪系统重做.md) |
 | 25 | 地图图例 | Map Legend UI | `2710167561` | UI / 地图 | 787.8 KB | 0 | 启用 | [2710167561_Map_Legend_UI_地图图标说明.md](2710167561_Map_Legend_UI_地图图标说明.md) |
-| 26 | 视角界面 | Viewpoint - Interface | `3812616893` | UI / 渲染 | 2.1 MB | 0 | 启用 | [3812616893_Viewpoint_-_Interface_视角模式UI.md](3812616893_Viewpoint_-_Interface_视角模式UI.md) |
+| 26 | 视角界面 | Viewpoint - Interface | `3812616893` | UI / 渲染 | 2.1 MB | 0 | 禁用 | [3812616893_Viewpoint_-_Interface_视角模式UI.md](3812616893_Viewpoint_-_Interface_视角模式UI.md) |
 | 27 | 数值修复 | Fix NaN Stats [B42.13-42.22] | `3627071412` | 修复 | 253.7 KB | 0 | 启用 | [3627071412_Fix_NaN_Stats_B42.13-42.22_NaN属性修正.md](3627071412_Fix_NaN_Stats_B42.13-42.22_NaN属性修正.md) |
 | 28 | KI5小修 | KI5 Mini-fixes | `3740300378` | 修复 / 载具 | 521.5 KB | 0 | 启用 | [3740300378_KI5_Mini-fixes_KI5载具Bug修复.md](3740300378_KI5_Mini-fixes_KI5载具Bug修复.md) |
 | 29 | 坐标显示 | Where Am I? | `3097650043` | UI / 工具 | 2.2 MB | 0 | 启用 | [3097650043_Where_Am_I_显示所在位置.md](3097650043_Where_Am_I_显示所在位置.md) |

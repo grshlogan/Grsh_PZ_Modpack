@@ -5,7 +5,7 @@ Project Zomboid **Build 42.22** 整合包，以 Viewpoint 第一人称 3D 渲染
 装包请按下面的清单在 Steam 创意工坊逐一订阅，尊重原作者的版权。
 
 - 游戏版本：B42.22（实测 `42.21.0`）
-- 条目：31 个（启用 29，禁用 2）
+- 条目：31 个（启用 28，禁用 3）
 - 体积：1.6 GB，脚本物品 315 条
 - 服务器世界名：`labworld`（同一个世界名 = 同一个存档与角色，换包不丢人）
 
@@ -51,7 +51,7 @@ Grsh_PZ_Modpack/
 | 23 | Neat制作 | Neat Crafting [B42.12] | [`3502080466`](https://steamcommunity.com/sharedfiles/filedetails/?id=3502080466) | UI / 制作 | 4.1 MB | ✅ 启用 | [查看](mod_archives/3502080466_Neat_Crafting_B42.12_制作界面重制.md) |
 | 24 | 烹饪重制 | Project Cook [Legacy] | [`3490188370`](https://steamcommunity.com/sharedfiles/filedetails/?id=3490188370) | 玩法 / 制作 | 7.6 MB | ✅ 启用 | [查看](mod_archives/3490188370_Project_Cook_Legacy_烹饪系统重做.md) |
 | 25 | 地图图例 | Map Legend UI | [`2710167561`](https://steamcommunity.com/sharedfiles/filedetails/?id=2710167561) | UI / 地图 | 787.8 KB | ✅ 启用 | [查看](mod_archives/2710167561_Map_Legend_UI_地图图标说明.md) |
-| 26 | 视角界面 | Viewpoint - Interface | [`3812616893`](https://steamcommunity.com/sharedfiles/filedetails/?id=3812616893) | UI / 渲染 | 2.1 MB | ✅ 启用 | [查看](mod_archives/3812616893_Viewpoint_-_Interface_视角模式UI.md) |
+| 26 | 视角界面 | Viewpoint - Interface | [`3812616893`](https://steamcommunity.com/sharedfiles/filedetails/?id=3812616893) | UI / 渲染 | 2.1 MB | ⏸ 禁用 | [查看](mod_archives/3812616893_Viewpoint_-_Interface_视角模式UI.md) |
 | 27 | 数值修复 | Fix NaN Stats [B42.13-42.22] | [`3627071412`](https://steamcommunity.com/sharedfiles/filedetails/?id=3627071412) | 修复 | 253.7 KB | ✅ 启用 | [查看](mod_archives/3627071412_Fix_NaN_Stats_B42.13-42.22_NaN属性修正.md) |
 | 28 | KI5小修 | KI5 Mini-fixes | [`3740300378`](https://steamcommunity.com/sharedfiles/filedetails/?id=3740300378) | 修复 / 载具 | 521.5 KB | ✅ 启用 | [查看](mod_archives/3740300378_KI5_Mini-fixes_KI5载具Bug修复.md) |
 | 29 | 坐标显示 | Where Am I? | [`3097650043`](https://steamcommunity.com/sharedfiles/filedetails/?id=3097650043) | UI / 工具 | 2.2 MB | ✅ 启用 | [查看](mod_archives/3097650043_Where_Am_I_显示所在位置.md) |
