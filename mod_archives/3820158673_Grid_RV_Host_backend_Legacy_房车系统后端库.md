@@ -37,7 +37,7 @@ GridRV 三件套共用的后端：网格化载具空间、建造与存储逻辑�
 
 ## 实测与排查
 
-同一工作坊 ID 下四个 mod（GridRVHost / GridRV / DaleChieftainRV / 两个 DeadWorks 残骸），按文件夹区分。
+服务端权威后端。mod.info 声明 javaJarFile=media/java/server/GridRVHost.jar；ZombieBuddy 2.3.4 在无头服务器上会误判成客户端并把 server-only jar 跳过，导致客户端一直提示 Waiting for the Grid RV Host backend——需要把 jar 复制到 media/java/ 并改写 mod.info（A004 的 lab.py sync 自动处理）。
 
 ```
 python lab.py check --profile play
