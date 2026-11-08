@@ -39,7 +39,7 @@ Dale 的 Chieftain 大型房车，空间比游牧版更大。
 
 ## 实测与排查
 
-172.8 MB，主要体积在模型与贴图。
+刷法：管理员聊天框 `/addvehicle "Base.DaleChieftainRV" "TEST"`，或 -debug 的「生成车辆」窗口选 `Base.DaleChieftainRV`。自然刷新权重与 GridRV 相同（campground 2、rvpark 2、trailerpark 0.75 等），但只在对应区域缺车时补位。172.8 MB，主要体积在模型与贴图。
 
 ```
 python lab.py check --profile play

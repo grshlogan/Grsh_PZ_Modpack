@@ -59,7 +59,7 @@
 
 ## 实测与排查
 
-15 条脚本物品 + 1 个载具脚本；92 MB。
+刷法：管理员聊天框 `/addvehicle "Base.GridRV" "TEST"`（或只写类名生成在自己身上），也可用 -debug 的「生成车辆」窗口选 `Base.GridRV`。自然刷新权重：campground 2、rvpark 2、trailerpark 0.75、parkingstall 0.35、farm 0.25、四个 trafficjam 0.35；沙盒 `GridRV → SpawnRate` 默认 100，设 0 即完全不刷。15 条脚本物品 + 1 个载具脚本；92 MB。
 
 ```
 python lab.py check --profile play
