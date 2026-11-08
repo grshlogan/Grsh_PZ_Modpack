@@ -1,5 +1,5 @@
 # KI5 车系与 Viewpoint 修复：候选清单
-自动取自 19 个 Viewpoint 合集的 945 条工坊元数据（`workspace/collections/items.json`），作者判定用 Steam creator id `76561198089039119`（KI5）。共 **100 个 KI5 条目**。
+自动取自 19 个 Viewpoint 合集的 945 条工坊元数据（`workspace/collections/items.json`），作者判定用 Steam creator id `76561198089039119`（KI5）。共 **100 个 KI5 条目**。社区热度榜（151 个合集的收录数）见 [`KI5-RECOMMENDED.md`](KI5-RECOMMENDED.md)。
 
 ## 1. KI5 车系（按年份）
 | 工坊 ID | 名称 | 体积 | 合集数 | 状态 |
