@@ -23,7 +23,7 @@
 
 - 需要：无
 - 互斥：无
-- 被依赖：`Viewpoint`、`AimohPmxPreview`、`PzPerformanceFixes`、`SuPerfCore`、`LaoYuTranslationJava`
+- 被依赖：`Viewpoint`、`AimohPmxPreview`、`PzPerformanceFixes`、`SuPerfCore`、`ViewpointLivingProps`、`aparosa_vpmo_RaccoonCityB42`、`ViewpointDLSS`、`ViewpointVisualFixes`、`PV-modmapbakefix`、`ProjectViewpointShelves`、`ProjectViewpoint-KI5VehiclePartsFix`、`ViewpointVehicleShellFix`、`ViewpointPartPaint`、`LaoYuTranslationJava`
 
 ## 内容清单
 

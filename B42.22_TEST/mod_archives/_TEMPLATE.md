@@ -1,6 +1,6 @@
 # mod 档案 · B42.22_TEST 模板
 
-这个目录按同一副骨架记录当前 **B42.22_TEST** 包的 42 个条目。共同规律写在本文，单个 mod 只填自己的事实；文档由 `tools/mod_archive.py` 生成，人工部分写在 `tools/mod_catalog.json`。
+这个目录按同一副骨架记录当前 **B42.22_TEST** 包的 52 个条目。共同规律写在本文，单个 mod 只填自己的事实；文档由 `tools/mod_archive.py` 生成，人工部分写在 `tools/mod_catalog.json`。
 
 文件名规则：`<steam_id>_<模组原名>_<模组中文介绍>.md`。同一个工作坊 ID 有多个子 mod 时，用文件夹区分，例如 `3640496116_VSGirlBody_S_SFW_...md` 与 `3640496116_VSGirlBody_Fix_...md`。
 
@@ -10,8 +10,8 @@
 | --- | --- |
 | 游戏版本 | B42.22（profile `gameVersion=42.22.0`） |
 | profile | `A004/B42.22_TEST/workspace/defs/b422-batch2/pack.json` |
-| 条目 | 42（启用 42，禁用 0） |
-| 双端 | Client 42 / Server 38 |
+| 条目 | 52（启用 52，禁用 0） |
+| 双端 | Client 52 / Server 48 |
 | 仅客户端 | `PzPerformanceFixes`、`VariableSkinSFW`、`VariableSkinFix`、`WhereAmI` |
 | 世界名 | `b422batch2` |
 | 汉化顺序 | `LaoYuTranslationJava` → `B42ModTrans_CN` → `B42Trans_CN`（末尾） |

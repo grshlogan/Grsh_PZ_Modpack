@@ -1,5 +1,5 @@
 {
-  "_note": "B42.22_TEST 42 条人工档案目录。brief/cat/cn 决定标题、索引和分类；what/mp/note 写入每份档案的人工段落。自动字段（mod.info、文件统计、脚本物品/载具/配方）由 tools/mod_archive.py 生成。",
+  "_note": "B42.22_TEST 52 个人工简介目录：brief/cat/cn 是标题、简介和分类；what/mp/note 写到每份的「它做什么 / 双端与联机 / 实测与排查」。自动字段（mod.info、文件统计、脚本物品/载具/配方）由 tools/mod_archive.py 生成。",
   "mods": {
     "3619862853": {
       "cn": "僵尸伙伴",
@@ -336,6 +336,86 @@
       "what": "在界面上显示当前坐标与所在区域名，方便报点和排查地图问题。",
       "mp": "当前 profile 为 client-only；服务端不加载，进服后会被服务端列表丢弃；单人可用。",
       "note": "mod id=BB_WhereAmI；2024-12-20 后未更新，B42.22_TEST 客户端加载正常。"
+    },
+    "3814486926": {
+      "cn": "3D 栅栏",
+      "brief": "把栅栏变成有厚度的 3D 模型",
+      "cat": "渲染 / Viewpoint 扩展",
+      "what": "为 Viewpoint 补充 3D 栅栏模型，让第一/第三人称下的木栅栏、金属栅栏有立体轮廓，不再只是平面贴图。",
+      "mp": "双端挂载；模型与渲染逻辑在客户端，服务端只校验 mod 列表一致。",
+      "note": "上游 1.0.0；versionMin=42.21，无 versionMax；require Viewpoint；2026-10-06 更新。"
+    },
+    "3816442251": {
+      "cn": "3D 生活道具",
+      "brief": "把室内外小物件变成 3D 模型",
+      "cat": "渲染 / Viewpoint 扩展",
+      "what": "为 Viewpoint 增加生活道具的 3D 模型与贴图，包括垃圾桶、箱子、家具等小物件，让场景里的杂物有真实体积。",
+      "mp": "双端挂载；模型资源在客户端加载，服务端只校验 mod 列表一致。",
+      "note": "上游 1.0.3；versionMin=42.21，无 versionMax；require Viewpoint、ZombieBuddy；2026-10-14 更新。"
+    },
+    "3816419379": {
+      "cn": "Raccoon City 地图家具",
+      "brief": "给地图 mod 补 3D 家具",
+      "cat": "渲染 / 地图",
+      "what": "为 Project Viewpoint 下的地图 mod 添加 Sprite Edition 的 3D 家具模型，当前页面标注适配 B42.22.2；依赖 Viewpoint 和 ZombieBuddy。",
+      "mp": "双端挂载；地图家具在客户端显示，服务端需要 mod 列表一致。",
+      "note": "上游 1.0.49；versionMin=42.0，无 versionMax；2026-11-10 更新；与具体地图 mod 搭配时先看该地图自己的依赖。"
+    },
+    "3815019204": {
+      "cn": "KI5 载具零件修复",
+      "brief": "修正 KI5 载具零件的显示位置",
+      "cat": "修复 / Viewpoint 扩展",
+      "what": "修正 Project Viewpoint 下 KI5 载具零件的显示与位置，避免零件错位或悬空；依赖 Viewpoint 和 ZombieBuddy。",
+      "mp": "双端挂载；Java 客户端补丁，服务端只校验 mod 列表；放在 KI5 载具之后加载。",
+      "note": "上游 1.3；versionMin=42.21，无 versionMax；2026-10-11 更新；jar=ViewpointVehiclePartsGuard.jar。"
+    },
+    "3819801335": {
+      "cn": "载具外壳修复",
+      "brief": "修正 Viewpoint 载具 3D 外壳",
+      "cat": "修复 / Viewpoint 扩展",
+      "what": "修正 Viewpoint 载具 3D 外壳的渲染与部件匹配，减少车身外观错位；依赖 Viewpoint 和 ZombieBuddy。",
+      "mp": "双端挂载；Java 客户端补丁，服务端只校验 mod 列表；放在载具 mod 之后加载。",
+      "note": "上游 1.1；versionMin=42.21，无 versionMax；2026-10-21 更新；jar=ViewpointVehicleShellFix.jar。"
+    },
+    "3834561718": {
+      "cn": "载具零件喷漆",
+      "brief": "给 3D 载具零件上色",
+      "cat": "修复 / Viewpoint 扩展",
+      "what": "为 Viewpoint 的载具零件增加喷漆/颜色支持，让模组载具的零件颜色更接近车身；依赖 Viewpoint 和 ZombieBuddy。",
+      "mp": "双端挂载；Java 客户端补丁，服务端只校验 mod 列表；放在载具 mod 之后加载。",
+      "note": "上游 0.5.3；versionMin=42.21，无 versionMax；2026-11-11 更新；与 VehiclePartPaint、VehiclePartPaintNoJava 互斥。"
+    },
+    "3818838508": {
+      "cn": "DLSS 帧生成",
+      "brief": "给 Viewpoint 加 DLSS 帧生成",
+      "cat": "渲染 / 性能",
+      "what": "为 Viewpoint 增加 DLSS 帧生成支持，在高分辨率下提升帧率；依赖 Viewpoint 和 ZombieBuddy。",
+      "mp": "双端挂载；实际图形功能在客户端，服务端只校验 mod 列表；需要支持 DLSS 的显卡和驱动。",
+      "note": "上游 0.1.6；versionMin=42.21，versionMax=42.22；2026-11-10 更新；实际帧率和画面需进游戏验收。"
+    },
+    "3821308495": {
+      "cn": "Viewpoint 视觉修复",
+      "brief": "修正 Viewpoint 的视觉细节",
+      "cat": "渲染 / 修复",
+      "what": "修正 Viewpoint 的材质、光照和渲染细节问题，当前版本专门适配 42.22；依赖 Viewpoint 和 ZombieBuddy。",
+      "mp": "双端挂载；渲染逻辑在客户端。",
+      "note": "上游 0.10.5；versionMin=42.22，versionMax=42.22；2026-11-10 更新。"
+    },
+    "3813929757": {
+      "cn": "地图烘焙修复",
+      "brief": "修复地图 mod 的烘焙与显示",
+      "cat": "渲染 / 地图",
+      "what": "修复 Project Viewpoint 下地图 mod 的烘焙与显示问题，当前版本支持 42.22；依赖 Viewpoint 和 ZombieBuddy。",
+      "mp": "双端挂载；实际修复在客户端。",
+      "note": "上游 0.1.4；versionMin=42.21，versionMax=42.22；2026-11-10 更新。"
+    },
+    "3815931973": {
+      "cn": "3D 货架",
+      "brief": "把货架变成有状态的 3D 模型",
+      "cat": "渲染 / Viewpoint 扩展",
+      "what": "为 Viewpoint 添加 3D 货架/展示柜模型和容器状态支持，依赖 Viewpoint 和 ZombieBuddy；Grsh 旧档案曾禁用，当前 0.4.8 已写 42.22。",
+      "mp": "双端挂载；模型与容器状态在客户端加载，服务端需要 mod 列表一致。",
+      "note": "上游 0.4.8；versionMin=42.22，versionMax=42.22；2026-11-10 更新；原 Grsh 档案为禁用，已按新版重新启用。"
     }
   }
 }

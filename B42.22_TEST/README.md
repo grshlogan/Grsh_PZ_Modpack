@@ -1,16 +1,17 @@
-# B42.22_TEST · 42 Mod 联机测试包
+# B42.22_TEST · 52 Mod 联机测试包
 
-这是 **A004/B42.22_TEST** 的文档副本，记录当前 B42.22 联机测试包的 42 个条目：
+这是 **A004/B42.22_TEST** 的文档副本，记录当前 B42.22 联机测试包的 52 个条目：
 它们做什么、依赖谁、加了哪些物品/载具/配方、哪一端加载、以及本机实测注意事项。
 这里只放档案，不含 mod 本体；实际运行库在 `A004/B42.22_TEST`。
 
 ## 当前包
 
 - 游戏版本：`B42.22`（profile `gameVersion=42.22.0`）
-- 条目：**42**（启用 42，禁用 0）
-- 双端：**Client 42 / Server 38**；服务端不加载的 4 条是 `PzPerformanceFixes`、`VariableSkinSFW`、`VariableSkinFix`、`WhereAmI`。
+- 条目：**52**（启用 52，禁用 0）
+- 双端：**Client 52 / Server 48**；服务端不加载的 4 条是 `PzPerformanceFixes`、`VariableSkinSFW`、`VariableSkinFix`、`WhereAmI`。
+- 未加入的 C 条目：`aparosa_DWVFTweaks` 依赖 `DeadWorksVehicleFramework`，后者又依赖 `PZVoxelStudioViewpoint`（6282）；两条依赖仍是 42.21 上限，因此本包暂不加入这条 C。
 - 世界名 / 服务器名：`b422batch2`；入口：`A004/B42.22_TEST/start-client.bat`、`start-server.bat`。
-- 体积：2.6 GB；脚本物品：436 条。
+- 体积：2.8 GB；脚本物品：436 条。
 - 三个汉化包均为 `both`，服务端 `Mods=` 末尾依次是 `LaoYuTranslationJava`、`B42ModTrans_CN`、`B42Trans_CN`。
 
 ## 目录
@@ -19,7 +20,7 @@
 B42.22_TEST/
 ├── README.md              # 本文件：包说明 + 按类别索引
 ├── mod_archives/          # 一个 mod 一份档案
-│   ├── INDEX.md           # 42 条简表
+│   ├── INDEX.md           # 52 条简表
 │   ├── _TEMPLATE.md       # 固定骨架与通用规则
 │   └── <steam_id>_<原名>_<中文简介>.md
 └── tools/
@@ -32,12 +33,19 @@ B42.22_TEST/
 
 类别只表示用途，不代表加载顺序；实际顺序看 profile 的 `loadOrder`。
 
-### 核心框架与渲染（5 个）
+### 核心框架与渲染（12 个）
 
 | 中文名 | 原名 | 工作坊 ID | 分发 | 体积 | 物品 | 档案 |
 | --- | --- | --- | --- | --- | --- | --- |
+| 3D 栅栏 | Viewpoint - 3D Fences | [`3814486926`](https://steamcommunity.com/sharedfiles/filedetails/?id=3814486926) | both | 2.9 MB | 0 | [查看](mod_archives/3814486926_Viewpoint_-_3D_Fences_把栅栏变成有厚度的_3D_模型.md) |
+| 3D 生活道具 | Viewpoint: Living Props | [`3816442251`](https://steamcommunity.com/sharedfiles/filedetails/?id=3816442251) | both | 78.0 MB | 0 | [查看](mod_archives/3816442251_Viewpoint_Living_Props_把室内外小物件变成_3D_模型.md) |
+| 3D 货架 | Project Viewpoint: KK's Shelves in 3D | [`3815931973`](https://steamcommunity.com/sharedfiles/filedetails/?id=3815931973) | both | 176.3 MB | 0 | [查看](mod_archives/3815931973_Project_Viewpoint_KKs_Shelves_in_3D_把货架变成有状态的_3D_模型.md) |
+| DLSS 帧生成 | Viewpoint DLSS Frame Generation | [`3818838508`](https://steamcommunity.com/sharedfiles/filedetails/?id=3818838508) | both | 4.3 MB | 0 | [查看](mod_archives/3818838508_Viewpoint_DLSS_Frame_Generation_给_Viewpoint_加_DLSS_帧生成.md) |
+| Raccoon City 地图家具 | Project Viewpoint Map Mod Furniture - Sprite Edition | [`3816419379`](https://steamcommunity.com/sharedfiles/filedetails/?id=3816419379) | both | 9.6 MB | 0 | [查看](mod_archives/3816419379_Project_Viewpoint_Map_Mod_Furniture_-_Sprite_Edition_给地图_mod_补_3D_家具.md) |
+| Viewpoint 视觉修复 | ViewpointVisualFixes | [`3821308495`](https://steamcommunity.com/sharedfiles/filedetails/?id=3821308495) | both | 91.5 KB | 0 | [查看](mod_archives/3821308495_ViewpointVisualFixes_修正_Viewpoint_的视觉细节.md) |
 | 僵尸伙伴 | ZombieBuddy | [`3619862853`](https://steamcommunity.com/sharedfiles/filedetails/?id=3619862853) | both | 13.8 MB | 0 | [查看](mod_archives/3619862853_ZombieBuddy_模组框架与3D动画核心.md) |
 | 右键修复 | Viewpoint - Right Click Fix | [`3819018807`](https://steamcommunity.com/sharedfiles/filedetails/?id=3819018807) | both | 677.1 KB | 0 | [查看](mod_archives/3819018807_Viewpoint_-_Right_Click_Fix_右键直接打开指向物体菜单.md) |
+| 地图烘焙修复 | Project Viewpoint: General Mod Map Fix | [`3813929757`](https://steamcommunity.com/sharedfiles/filedetails/?id=3813929757) | both | 25.8 KB | 0 | [查看](mod_archives/3813929757_Project_Viewpoint_General_Mod_Map_Fix_修复地图_mod_的烘焙与显示.md) |
 | 封窗木条修复 | Viewpoint - Barricade Fix | [`3815033191`](https://steamcommunity.com/sharedfiles/filedetails/?id=3815033191) | both | 278.3 KB | 0 | [查看](mod_archives/3815033191_Viewpoint_-_Barricade_Fix_木质金属封窗位置修正.md) |
 | 视角屋顶 | Viewpoint - Roofs (WIP) | [`3817294484`](https://steamcommunity.com/sharedfiles/filedetails/?id=3817294484) | both | 84.5 MB | 0 | [查看](mod_archives/3817294484_Viewpoint_-_Roofs_WIP_屋顶遮挡与显示.md) |
 | 视角重构 | Viewpoint | [`3809306528`](https://steamcommunity.com/sharedfiles/filedetails/?id=3809306528) | both | 32.6 MB | 0 | [查看](mod_archives/3809306528_Viewpoint_第一人称3D渲染核心.md) |
@@ -105,11 +113,14 @@ B42.22_TEST/
 | --- | --- | --- | --- | --- | --- | --- |
 | 折叠梯 | Ladders?! B42.22+ (Craftable & movable ladder) | [`3629835761`](https://steamcommunity.com/sharedfiles/filedetails/?id=3629835761) | both | 358.0 KB | 6 | [查看](mod_archives/3629835761_Ladders!_B42.22+_Craftable_and_movable_ladder_B42.22_可制作、可移动的折叠梯.md) |
 
-### 修复与兼容（1 个）
+### 修复与兼容（4 个）
 
 | 中文名 | 原名 | 工作坊 ID | 分发 | 体积 | 物品 | 档案 |
 | --- | --- | --- | --- | --- | --- | --- |
+| KI5 载具零件修复 | Project Viewpoint - KI5 Vehicle Parts Fix | [`3815019204`](https://steamcommunity.com/sharedfiles/filedetails/?id=3815019204) | both | 175.3 KB | 0 | [查看](mod_archives/3815019204_Project_Viewpoint_-_KI5_Vehicle_Parts_Fix_修正_KI5_载具零件的显示位置.md) |
 | 数值修复 | Fix NaN Stats [B42.13-42.22] | [`3627071412`](https://steamcommunity.com/sharedfiles/filedetails/?id=3627071412) | both | 253.7 KB | 0 | [查看](mod_archives/3627071412_Fix_NaN_Stats_B42.13-42.22_NaN属性修正.md) |
+| 载具外壳修复 | Viewpoint - Vehicle Shell Fix | [`3819801335`](https://steamcommunity.com/sharedfiles/filedetails/?id=3819801335) | both | 40.5 KB | 0 | [查看](mod_archives/3819801335_Viewpoint_-_Vehicle_Shell_Fix_修正_Viewpoint_载具_3D_外壳.md) |
+| 载具零件喷漆 | Viewpoint - Part Paint | [`3834561718`](https://steamcommunity.com/sharedfiles/filedetails/?id=3834561718) | both | 714.4 KB | 0 | [查看](mod_archives/3834561718_Viewpoint_-_Part_Paint_给_3D_载具零件上色.md) |
 
 ### 汉化（3 个）
 

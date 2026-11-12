@@ -35,7 +35,9 @@ BAD_NAME = re.compile(r'[<>:\"/\\|?*\s]+')
 README_GROUPS = [
     ("核心框架与渲染", {
         "ZombieBuddy", "Viewpoint", "ViewpointRightClick", "ViewpointRoofs",
-        "ViewpointBarricade",
+        "ViewpointBarricade", "ViewpointFences3D", "ViewpointLivingProps",
+        "aparosa_vpmo_RaccoonCityB42", "ViewpointDLSS", "ViewpointVisualFixes",
+        "PV-modmapbakefix", "ProjectViewpointShelves",
     }),
     ("角色与外观", {"AimohPmxPreview", "VariableSkinSFW", "VariableSkinFix"}),
     ("界面、库存与制作", {
@@ -52,7 +54,10 @@ README_GROUPS = [
         "78amgeneralM35A2", "82jeepJ10",
     }),
     ("玩法与移动", {"Ladders Collapsible"}),
-    ("修复与兼容", {"FixNaNStats"}),
+    ("修复与兼容", {
+        "FixNaNStats", "ProjectViewpoint-KI5VehiclePartsFix",
+        "ViewpointVehicleShellFix", "ViewpointPartPaint",
+    }),
     ("汉化", {"LaoYuTranslationJava", "B42ModTrans_CN_As1", "B42Trans_CN_As1"}),
 ]
 
@@ -377,9 +382,9 @@ def render_readme(rows: list[dict], total_items: int, total_size: int, profile: 
         grouped.setdefault(readme_group(row["folder"]), []).append(row)
 
     lines = [
-        "# B42.22_TEST · 42 Mod 联机测试包",
+        f"# B42.22_TEST · {len(rows)} Mod 联机测试包",
         "",
-        "这是 **A004/B42.22_TEST** 的文档副本，记录当前 B42.22 联机测试包的 42 个条目：",
+        f"这是 **A004/B42.22_TEST** 的文档副本，记录当前 B42.22 联机测试包的 {len(rows)} 个条目：",
         "它们做什么、依赖谁、加了哪些物品/载具/配方、哪一端加载、以及本机实测注意事项。",
         "这里只放档案，不含 mod 本体；实际运行库在 `A004/B42.22_TEST`。",
         "",
@@ -387,8 +392,9 @@ def render_readme(rows: list[dict], total_items: int, total_size: int, profile: 
         "",
         f"- 游戏版本：`B42.22`（profile `gameVersion=42.22.0`）",
         f"- 条目：**{len(rows)}**（启用 {enabled}，禁用 {len(rows) - enabled}）",
-        f"- 双端：**Client 42 / Server 38**；服务端不加载的 4 条是 "
+        f"- 双端：**Client {len(rows)} / Server {len(rows) - len(client_only)}**；服务端不加载的 {len(client_only)} 条是 "
         + "、".join(f"`{r['folder']}`" for r in client_only) + "。",
+        "- 未加入的 C 条目：`aparosa_DWVFTweaks` 依赖 `DeadWorksVehicleFramework`，后者又依赖 `PZVoxelStudioViewpoint`（6282）；两条依赖仍是 42.21 上限，因此本包暂不加入这条 C。",
         "- 世界名 / 服务器名：`b422batch2`；入口：`A004/B42.22_TEST/start-client.bat`、`start-server.bat`。",
         f"- 体积：{human(total_size)}；脚本物品：{total_items:,} 条。",
         "- 三个汉化包均为 `both`，服务端 `Mods=` 末尾依次是 "
@@ -400,7 +406,7 @@ def render_readme(rows: list[dict], total_items: int, total_size: int, profile: 
         "B42.22_TEST/",
         "├── README.md              # 本文件：包说明 + 按类别索引",
         "├── mod_archives/          # 一个 mod 一份档案",
-        "│   ├── INDEX.md           # 42 条简表",
+        f"│   ├── INDEX.md           # {len(rows)} 条简表",
         "│   ├── _TEMPLATE.md       # 固定骨架与通用规则",
         "│   └── <steam_id>_<原名>_<中文简介>.md",
         "└── tools/",
@@ -437,7 +443,7 @@ def render_readme(rows: list[dict], total_items: int, total_size: int, profile: 
         "## 三条通用规则",
         "",
         "1. **双端一致**：标记 `both` 的模组客户端和服务端都要装；少一边会因 mod 列表校验失败而连不上。"
-        "当前 4 条 `client` 只装客户端，进服后会被服务端 `Mods=` 列表丢弃，这是已知行为。",
+        f"当前 {len(client_only)} 条 `client` 只装客户端，进服后会被服务端 `Mods=` 列表丢弃，这是已知行为。",
         "2. **依赖在前**：`ZombieBuddy`、`NeatUI_Framework`、`damnlib`、`YAPZLib`、`Viewpoint` "
         "必须排在依赖它的内容之前；汉化包放最后。",
         "3. **汉化垫底**：`LaoYuTranslationJava` → `B42ModTrans_CN` → `B42Trans_CN`，"
