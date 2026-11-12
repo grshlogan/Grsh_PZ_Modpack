@@ -1,6 +1,7 @@
 # 模组调度优化（模组统一调度与优化(subieliSuSir)）
 
-**模组加载调度提速** · 分类：性能 · 3825832401 · 启用 · 加载位次 51
+**模组加载调度提速** · 分类：性能 · `3825832401` · 启用 · 加载位次 18
+归属：**日常组合**；档案视图 `b422-compat`。
 
 ## 它做什么
 
@@ -13,10 +14,13 @@
 | 工作坊 ID | `3825832401` |
 | mod id | `SuPerfCore` |
 | 文件夹 | `SuPerfCore` |
-| 版本 / 适配 | `42.21.0` … `-` |
+| Mod 版本 | `1.1` |
+| 原件适配 | `42.21.0` … `-` |
+| 当前生效适配 | `42.21.0` … `-`（原件） |
+| 元数据来源 | `42/mod.info` |
 | 作者 | subieliSuSir |
 | 工作坊更新时间 | 2026-10-25 |
-| 分发端 | both |
+| 分发端 | both（双端） |
 | 体积 / 文件 | 217.3 KB · 6 文件（lua 1，client 0，server 0；贴图 3；模型 0；翻译 0；Java 源码 0、jar/class 1） |
 
 ## 依赖与冲突
@@ -31,17 +35,20 @@
 
 ## 双端与联机
 
-双端。
+双端挂载。
 
-本机实测文件构成：客户端无 lua（纯资源）；服务端无 lua（只挂载）。
+当前 profile：both（双端）。
+
+本机文件构成：客户端无 lua（纯资源）；服务端无 lua（只挂载）。
 
 ## 实测与排查
 
 需要 ZombieBuddy；与 PzPerformanceFixes 同装时按 loadOrder 先后加载。
 
 ```
-python lab.py check --profile play
-grep -a 'SuPerfCore' runs/<trial>/console.log
+cd A004
+python lab.py check --profile b422-compat
+grep -a 'SuPerfCore' runs/<trial>/*console.log
 ```
 
 ## 作者原话
@@ -53,6 +60,5 @@ grep -a 'SuPerfCore' runs/<trial>/console.log
 ## 来源
 
 - 工作坊：`https://steamcommunity.com/sharedfiles/filedetails/?id=3825832401`
-- 本地快照：`workspace/mods_library/3825832401/mods/SuPerfCore`
-- 档案生成：`python tools/mod_archive.py --profile play`
-
+- 本地原件：`A004/workspace/mods_library/3825832401/mods/SuPerfCore`
+- 档案生成：`python tools/mod_archive.py --profile b422-compat`

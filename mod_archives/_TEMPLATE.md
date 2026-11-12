@@ -1,55 +1,42 @@
-# mod 档案 · 通用模板
+# B42.22 Mod 档案模板
 
-这个目录里的每份文档都按同一副骨架写，骨架来自对 `play` 包 31 个条目的遍历：
-共性部分一次写好、逐份复用；每个 mod 只填自己那段。
+本目录覆盖日常组合与独立兼容候选。条目数、端别和归属以 [INDEX.md](INDEX.md) 为准；运行验证边界见 [兼容说明](../COMPATIBILITY.md)。生成档案不切换运行组合。
 
-文件名规则：`<steam_id>_<模组原名>_<模组中文介绍>.md`（例：`3619862853_ZombieBuddy_模组框架与3D动画核心.md`）。
+## 每份档案的骨架
 
-## 一、遍历出来的共性（31 个条目）
+1. **它做什么**：作用和用途，来自人工 catalog。
+2. **概览**：Workshop/Mod ID、文件夹、Mod 版本、原件范围、Overlay 后范围、元数据路径、作者、更新时间快照、端别和完整目录统计。
+3. **依赖与冲突**：当前有效 mod.info 的 require、incompatible 与被依赖关系；工坊 Required items 需另行逐页核对。
+4. **内容清单**：脚本物品 ID、载具脚本和配方。物品完整 ID 为 `<module>.<item>`，通常 module 为 `Base`。
+5. **双端与联机**：人工注记、profile 的 distribution 以及文件构成；文件存在不证明功能可用。
+6. **实测与排查**：区分历史加载、离线检查和待验收；记录补丁路径与静态检查命令。
+7. **作者原话**：所选 mod.info 的 description，最多 1000 字符。
+8. **来源**：工坊页、A004 原件相对路径和重新生成命令。
 
-| 共性 | 数量 | 说明 |
-| --- | --- | --- |
-| `mod.info` 不在根目录、而在版本子目录（`42/`、`42.0/`、`42.20.4/`…） | 21 / 31 | 引擎按 `versionMin/versionMax` 选目录，所以同一个 mod 会有多份 `mod.info`，内容基本一致 |
-| 目录结构是 `<版本目录>/ + common/` | 11 / 31 | `common/` 放跨版本共用资源，版本目录放该版本的脚本与 lua |
-| 有 `media/lua/client` | 24 / 31 | 客户端行为；纯资源类（模型包、贴图包）没有 |
-| 有 `media/lua/server` | 7 / 31 | 服务端裁决逻辑；大多数 mod 服务端只是“挂载”以保证 mod 列表一致 |
-| 有 `Translate/` | 19 / 31 | 翻译是整文件覆盖：`Translate/CN/UI.json` 会顶掉同名的其它 mod 文件（C 组实测） |
-| 有贴图 | 29 / 31 | 几乎都带 `.png` / `.dds` |
-| 有 3D 模型（`.fbx` / `.x`） | 5 / 31 | Viewpoint 系的模型包 |
-| 有 `media/scripts` 脚本 | 7 / 31 | 只有它们会注册物品/载具/配方 |
+## 自动与人工的分工
 
-由此得到三条通用规律：
+- `tools/mod_catalog.json` 保存 `cn / brief / cat / what / mp / note`。
+- 自动字段从 `A004/workspace/mods_library/<id>/mods/<folder>`、`workspace/patches/mods/<folder>` 及所选 profile 生成。
+- 元数据版本目录按部署工具的规则选择：取不高于引擎的最新数字目录，再应用对应 Overlay；不因原件上限旧而偷偷挑另一旧分支。
+- 原件范围与补丁后范围必须分列；本地放行不写成作者支持 B42.22。
+- 一个 Workshop ID 含多个子 Mod 时，catalog 键用 `<id>-<folder小写>`；档案文件名为 `<id>_<原名>_<中文简介>.md`。
+- 不手改生成的单 Mod 文档。生成器会重建输出目录除 `_TEMPLATE.md` 外的 Markdown，README 写在输出目录的父级。
 
-1. **双端规则**：`distribution` 为 `both` 的 mod 两端都要装；服务端不一定跑逻辑，但缺了会让客户端连不上（mod 列表校验）。
-2. **加载顺序规则**：被 `require=` 的库必须在前；汉化必须最后（本包 `order_tail` = 统一模组汉化 → 统一中文汉化）。
-3. **物品 id 规则**：脚本物品的完整 id 是 `<module>.<item 名>`，默认模块是 `Base`；所以查 id 就是查脚本里的 `item` 名。
+## 离线更新
 
-## 二、每份文档的固定骨架
+在 `Grsh_PZ_Modpack` 中执行：
 
-```
-# 中文名（英文名）
-
-**一句话简介** · 分类：xx · <steam_id> · 启用/禁用 · 加载位次 N
-
-## 它做什么          ← 人工：1-3 句，讲清它解决什么问题
-## 概览              ← 自动：工作坊 ID / mod id / 文件夹 / 版本适配 / 作者 / 更新时间 / 分发端 / 体积与文件构成
-## 依赖与冲突        ← 自动：require、incompatible、被谁依赖
-## 内容清单          ← 自动：脚本物品表（id + 显示名 + 类型）、载具脚本、配方
-## 双端与联机        ← 人工 mp 注记 + 自动（客户端是否有 lua、服务端是否有 lua）
-## 实测与排查        ← 人工：日志关键字、已知噪声、我们跑出来的结论 + 两条排查命令
-## 作者原话          ← 自动：mod.info 的 description 原文
-## 来源              ← 自动：工作坊链接、本地快照路径、重新生成命令
+```bash
+python tools/mod_archive.py
+python tools/test_mod_archive.py
 ```
 
-分工：
+默认档案视图 `b422-compat` 覆盖候选全集；实际 `lab.py` 与 BAT 仍默认 `b422-main`。检查指定组合在 A004 根执行 `python lab.py check --profile <组合>`，不会启动游戏。
 
-- **自动**部分由 `tools/mod_archive.py` 扫 `workspace/mods_library/` 和 `defs/play/pack.json` 生成，不会手抄出错。
-- **人工**部分（它做什么 / 双端与联机 / 实测与排查）写在 `tools/mod_catalog.json`，一个 mod 一段。
+## 边界
 
-## 三、新增或更新一个 mod 时
-
-1. 在 `workspace/defs/play/pack.json` 里加条目（`workshopId` / `folder` / `modId` / `enabled` / `distribution`）。
-2. 在 `tools/mod_catalog.json` 里补 `cn` / `brief` / `cat` / `what` / `mp` / `note`（`233` 这样的键：工作坊 ID；同一 ID 多 mod 时用 `<id>-<文件夹小写>`）。
-3. 跑 `python tools/mod_archive.py --profile play`，文档、索引一起刷新。
-
-> 生成器会删掉目录里除 `_TEMPLATE.md` 之外的 `.md` 再重写，所以不要手工改生成物 —— 改 catalog。
+- 体积、文件数、物品/配方/载具统计遍历原件完整目录。多版本目录会重复或放大统计，数字不是引擎实际加载值。
+- 四条仅客户端项进服后会按服务端清单重载；不把主菜单加载当作进服仍有效。
+- `both` 两端均需挂载；依赖在前，三个汉化包置底。
+- 加载日志、SERVER STARTED、无异常都不等于视觉、碰撞、联机一致性或存档验收。
+- 所有 Mod 版权归各自作者；本仓库只保存开发说明，不分发 Mod 二进制。

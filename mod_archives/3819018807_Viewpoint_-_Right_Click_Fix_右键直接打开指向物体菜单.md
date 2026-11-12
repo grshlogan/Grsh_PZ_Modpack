@@ -1,6 +1,7 @@
 # 右键修复（Viewpoint - Right Click Fix）
 
-**右键直接打开指向物体菜单** · 分类：操作 / 修复 · 3819018807 · 启用 · 加载位次 10
+**右键直接打开指向物体菜单** · 分类：操作 / 修复 · `3819018807` · 启用 · 加载位次 19
+归属：**日常组合**；档案视图 `b422-compat`。
 
 ## 它做什么
 
@@ -13,11 +14,14 @@
 | 工作坊 ID | `3819018807` |
 | mod id | `ViewpointRightClick` |
 | 文件夹 | `ViewpointRightClick` |
-| 版本 / 适配 | `42.21` … `-` |
+| Mod 版本 | `1.3` |
+| 原件适配 | `42.22` … `-` |
+| 当前生效适配 | `42.22` … `-`（原件） |
+| 元数据来源 | `42.22/mod.info` |
 | 作者 | - |
-| 工作坊更新时间 | 2026-10-14 |
-| 分发端 | both |
-| 体积 / 文件 | 347.1 KB · 12 文件（lua 1，client 1，server 0；贴图 1；模型 0；翻译 2；Java 源码 4、jar/class 1） |
+| 工作坊更新时间 | 2026-11-11 |
+| 分发端 | both（双端） |
+| 体积 / 文件 | 677.1 KB · 18 文件（lua 2，client 2，server 0；贴图 2；模型 0；翻译 4；Java 源码 4、jar/class 2） |
 
 ## 依赖与冲突
 
@@ -31,17 +35,20 @@
 
 ## 双端与联机
 
-双端挂载；纯客户端输入逻辑。
+双端挂载；输入逻辑在客户端。
 
-本机实测文件构成：客户端有 lua；服务端无 lua（只挂载）。
+当前 profile：both（双端）。
+
+本机文件构成：客户端有 lua；服务端无 lua（只挂载）。
 
 ## 实测与排查
 
-Java 模块 ViewpointRightClick.jar，需 ZombieBuddy 批准。
+Java 模块 ViewpointRightClick.jar，需 ZombieBuddy 批准；当前本地版本 42.22。
 
 ```
-python lab.py check --profile play
-grep -a 'ViewpointRightClick' runs/<trial>/console.log
+cd A004
+python lab.py check --profile b422-compat
+grep -a 'ViewpointRightClick' runs/<trial>/*console.log
 ```
 
 ## 作者原话
@@ -53,6 +60,5 @@ Addon for Project Viewpoint. In first and third person with the mouse cursor sho
 ## 来源
 
 - 工作坊：`https://steamcommunity.com/sharedfiles/filedetails/?id=3819018807`
-- 本地快照：`workspace/mods_library/3819018807/mods/ViewpointRightClick`
-- 档案生成：`python tools/mod_archive.py --profile play`
-
+- 本地原件：`A004/workspace/mods_library/3819018807/mods/ViewpointRightClick`
+- 档案生成：`python tools/mod_archive.py --profile b422-compat`

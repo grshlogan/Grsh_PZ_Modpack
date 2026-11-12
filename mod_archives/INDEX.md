@@ -1,70 +1,78 @@
-# play 包 mod 档案索引
+# B42.22 Mod 档案索引（档案视图 b422-compat）
 
-共 57 个条目（启用 54，禁用 3），合计 2.2 GB、脚本物品 872 条。
+共 64 个条目（启用 64，禁用 0），合计 3.4 GB、脚本物品 450 条。
 结构见 [_TEMPLATE.md](_TEMPLATE.md)；文件名为 `<steam_id>_<模组原名>_<模组中文介绍>.md`。
 
-| # | 中文名 | mod | 工作坊 ID | 分类 | 体积 | 物品 | 状态 | 档案 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 僵尸伙伴 | ZombieBuddy | `3619862853` | 框架 / 渲染底层 | 13.8 MB | 0 | 启用 | [3619862853_ZombieBuddy_模组框架与3D动画核心.md](3619862853_ZombieBuddy_模组框架与3D动画核心.md) |
-| 2 | 视角重构 | Viewpoint | `3809306528` | 渲染 / 视角 | 32.6 MB | 0 | 启用 | [3809306528_Viewpoint_第一人称3D渲染核心.md](3809306528_Viewpoint_第一人称3D渲染核心.md) |
-| 3 | 6282体素模型包 | 6282 3D models for Viewpoint [sour_kisel] | `3810302175` | 素材 / 模型 | 272.7 MB | 0 | 启用 | [3810302175_6282_3D_models_for_Viewpoint_sour_kisel_3D模型与贴图素材库.md](3810302175_6282_3D_models_for_Viewpoint_sour_kisel_3D模型与贴图素材库.md) |
-| 4 | 视角表面修复 | Viewpoint - Surface Fix | `3814398576` | 渲染 / 修复 | 536.0 KB | 0 | 启用 | [3814398576_Viewpoint_-_Surface_Fix_墙面地面渲染修正.md](3814398576_Viewpoint_-_Surface_Fix_墙面地面渲染修正.md) |
-| 5 | 3D 门与车库 | Project Viewpoint - 3D Doors, Gates & Garages | `3818859807` | 渲染 / 模型 | 65.6 MB | 0 | 启用 | [3818859807_Project_Viewpoint_-_3D_Doors_Gates_and_Garages_276_个门模型替代.md](3818859807_Project_Viewpoint_-_3D_Doors_Gates_and_Garages_276_个门模型替代.md) |
-| 6 | 封窗木条修复 | Viewpoint - Barricade Fix | `3815033191` | 渲染 / 修复 | 278.3 KB | 0 | 启用 | [3815033191_Viewpoint_-_Barricade_Fix_木质金属封窗位置修正.md](3815033191_Viewpoint_-_Barricade_Fix_木质金属封窗位置修正.md) |
-| 7 | 视角屋顶 | Viewpoint - Roofs (WIP) | `3817294484` | 渲染 | 84.5 MB | 0 | 启用 | [3817294484_Viewpoint_-_Roofs_WIP_屋顶遮挡与显示.md](3817294484_Viewpoint_-_Roofs_WIP_屋顶遮挡与显示.md) |
-| 8 | 3D 栅栏 | Viewpoint - 3D Fences | `3814486926` | 渲染 / 模型 | 2.9 MB | 0 | 启用 | [3814486926_Viewpoint_-_3D_Fences_13_种常见栅栏_3D_化.md](3814486926_Viewpoint_-_3D_Fences_13_种常见栅栏_3D_化.md) |
-| 9 | 生活道具 | Viewpoint: Living Props | `3816442251` | 渲染 / 模型 | 78.0 MB | 0 | 启用 | [3816442251_Viewpoint_Living_Props_会变状态的家具_3D_化.md](3816442251_Viewpoint_Living_Props_会变状态的家具_3D_化.md) |
-| 10 | 右键修复 | Viewpoint - Right Click Fix | `3819018807` | 操作 / 修复 | 347.1 KB | 0 | 启用 | [3819018807_Viewpoint_-_Right_Click_Fix_右键直接打开指向物体菜单.md](3819018807_Viewpoint_-_Right_Click_Fix_右键直接打开指向物体菜单.md) |
-| 11 | KK 3D 货架 | Project Viewpoint: KK's Shelves in 3D | `3815931973` | 渲染 / 模型 | 176.3 MB | 0 | 启用 | [3815931973_Project_Viewpoint_KKs_Shelves_in_3D_货架按库存显示空轻满.md](3815931973_Project_Viewpoint_KKs_Shelves_in_3D_货架按库存显示空轻满.md) |
-| 12 | 浣熊市家具贴图 | Project Viewpoint Map Mod Furniture - Sprite Edition | `3816419379` | 素材 / 地图 | 9.4 MB | 0 | 启用 | [3816419379_Project_Viewpoint_Map_Mod_Furniture_-_Sprite_Edition_地图家具3D化.md](3816419379_Project_Viewpoint_Map_Mod_Furniture_-_Sprite_Edition_地图家具3D化.md) |
-| 13 | 地图烘焙修复 | Project Viewpoint: General Mod Map Fix | `3813929757` | 修复 / 地图 | 25.8 KB | 0 | 启用 | [3813929757_Project_Viewpoint_General_Mod_Map_Fix_烘焙贴图修正.md](3813929757_Project_Viewpoint_General_Mod_Map_Fix_烘焙贴图修正.md) |
-| 14 | 网格房车后端 | Grid RV Host backend (Legacy) | `3820158673` | 框架 / 载具 | 106.9 KB | 0 | 禁用 | [3820158673_Grid_RV_Host_backend_Legacy_房车系统后端库.md](3820158673_Grid_RV_Host_backend_Legacy_房车系统后端库.md) |
-| 15 | 游牧网格房车 | Nomad Grid RV (Legacy) | `3820158673` | 载具 / 建造 | 92.1 MB | 15 | 禁用 | [3820158673_Nomad_Grid_RV_Legacy_可建造移动房车.md](3820158673_Nomad_Grid_RV_Legacy_可建造移动房车.md) |
-| 16 | 酋长房车 | Dale's Chieftain RV (Legacy) | `3820158673` | 载具 | 172.8 MB | 0 | 禁用 | [3820158673_Dales_Chieftain_RV_Legacy_大型房车载具.md](3820158673_Dales_Chieftain_RV_Legacy_大型房车载具.md) |
-| 17 | 废弃酋长房车 | Dale's Chieftain RV | `3820158673` | 载具 / 可选 | 53.5 MB | 0 | 启用 | [3820158673_Dales_Chieftain_RV_房车残骸替换件.md](3820158673_Dales_Chieftain_RV_房车残骸替换件.md) |
-| 18 | 废弃游牧房车 | Nomad RV | `3820158673` | 载具 / 可选 | 56.6 MB | 24 | 启用 | [3820158673_Nomad_RV_房车残骸替换件.md](3820158673_Nomad_RV_房车残骸替换件.md) |
-| 19 | 载具资源库 | that DAMN Library | `3171167894` | 框架 / 素材 | 40.3 MB | 276 | 启用 | [3171167894_that_DAMN_Library_KI5载具公共资源.md](3171167894_that_DAMN_Library_KI5载具公共资源.md) |
-| 20 | 通用函数库 | Yet Another PZ Library | `3624971238` | 框架 | 90.2 KB | 0 | 启用 | [3624971238_Yet_Another_PZ_Library_KI5脚本依赖库.md](3624971238_Yet_Another_PZ_Library_KI5脚本依赖库.md) |
-| 21 | KI5 血迹贴图修复 | Project Viewpoint - KI5 Blood Texture Fix | `3819702412` | 渲染 / 修复 | 72.1 KB | 0 | 启用 | [3819702412_Project_Viewpoint_-_KI5_Blood_Texture_Fix_KI5_车血迹材质修正.md](3819702412_Project_Viewpoint_-_KI5_Blood_Texture_Fix_KI5_车血迹材质修正.md) |
-| 22 | KI5 车辆部件修复 | Project Viewpoint - KI5 Vehicle Parts Fix | `3815019204` | 渲染 / 修复 | 175.3 KB | 0 | 启用 | [3815019204_Project_Viewpoint_-_KI5_Vehicle_Parts_Fix_KI5_车部件渲染与装配修正.md](3815019204_Project_Viewpoint_-_KI5_Vehicle_Parts_Fix_KI5_车部件渲染与装配修正.md) |
-| 23 | 车身外壳修复 | Viewpoint - Vehicle Shell Fix | `3819801335` | 渲染 / 修复 | 40.5 KB | 0 | 启用 | [3819801335_Viewpoint_-_Vehicle_Shell_Fix_近距离车身贴合修正.md](3819801335_Viewpoint_-_Vehicle_Shell_Fix_近距离车身贴合修正.md) |
-| 24 | 车身分件喷漆 | Viewpoint - Part Paint | `3834561718` | 渲染 / 车辆 | 700.4 KB | 0 | 启用 | [3834561718_Viewpoint_-_Part_Paint_支持改装车的分件喷漆.md](3834561718_Viewpoint_-_Part_Paint_支持改装车的分件喷漆.md) |
-| 25 | Neat界面框架 | NeatUI_Framework | `3508537032` | 框架 / UI | 2.2 MB | 0 | 启用 | [3508537032_NeatUI_Framework_制作界面框架.md](3508537032_NeatUI_Framework_制作界面框架.md) |
-| 26 | 分类整理 | Better Sorting | `2313387159` | UI / 整理 | 1.7 MB | 0 | 启用 | [2313387159_Better_Sorting_库存分类菜单.md](2313387159_Better_Sorting_库存分类菜单.md) |
-| 27 | 就近存取 | Proximity Inventory B42 | `2847184718` | UI / 便利 | 685.9 KB | 0 | 启用 | [2847184718_Proximity_Inventory_B42_周边容器一键取放.md](2847184718_Proximity_Inventory_B42_周边容器一键取放.md) |
-| 28 | 沙盒选项 | [B42] Sandbox Options | `3386906181` | 工具 / 管理 | 8.9 MB | 0 | 启用 | [3386906181_B42_Sandbox_Options_游戏内改沙盒设置.md](3386906181_B42_Sandbox_Options_游戏内改沙盒设置.md) |
-| 29 | 烹饪重制 | Project Cook [Legacy] | `3490188370` | 玩法 / 制作 | 7.6 MB | 0 | 启用 | [3490188370_Project_Cook_Legacy_烹饪系统重做.md](3490188370_Project_Cook_Legacy_烹饪系统重做.md) |
-| 30 | Neat制作 | Neat Crafting [B42.12] | `3502080466` | UI / 制作 | 4.1 MB | 0 | 启用 | [3502080466_Neat_Crafting_B42.12_制作界面重制.md](3502080466_Neat_Crafting_B42.12_制作界面重制.md) |
-| 31 | 自动整理 | Tidy Up Meister | `2769706949` | UI / 整理 | 1.3 MB | 0 | 启用 | [2769706949_Tidy_Up_Meister_库存自动归位.md](2769706949_Tidy_Up_Meister_库存自动归位.md) |
-| 32 | 地图图例 | Map Legend UI | `2710167561` | UI / 地图 | 787.8 KB | 0 | 启用 | [2710167561_Map_Legend_UI_地图图标说明.md](2710167561_Map_Legend_UI_地图图标说明.md) |
-| 33 | 性能修复 | PzPerformanceFixes | `3826630779` | 性能 | 1.1 MB | 0 | 启用 | [3826630779_PzPerformanceFixes_帧率与卡顿优化.md](3826630779_PzPerformanceFixes_帧率与卡顿优化.md) |
-| 34 | 模组调度优化 | 模组统一调度与优化(subieliSuSir) | `3825832401` | 性能 | 217.3 KB | 0 | 启用 | [3825832401_模组统一调度与优化subieliSuSir_模组加载调度提速.md](3825832401_模组统一调度与优化subieliSuSir_模组加载调度提速.md) |
-| 35 | 数值修复 | Fix NaN Stats [B42.13-42.22] | `3627071412` | 修复 | 253.7 KB | 0 | 启用 | [3627071412_Fix_NaN_Stats_B42.13-42.22_NaN属性修正.md](3627071412_Fix_NaN_Stats_B42.13-42.22_NaN属性修正.md) |
-| 36 | 坐标显示 | Where Am I? | `3097650043` | UI / 工具 | 2.2 MB | 0 | 启用 | [3097650043_Where_Am_I_显示所在位置.md](3097650043_Where_Am_I_显示所在位置.md) |
-| 37 | 调试菜单社区版 | B42/41调试菜单社区版 (DebugMenu_Community) | `3735377688` | 调试 / 工具 | 1.1 MB | 0 | 启用 | [3735377688_B4241调试菜单社区版_DebugMenu_Community_右键多级调试与管理员菜单.md](3735377688_B4241调试菜单社区版_DebugMenu_Community_右键多级调试与管理员菜单.md) |
-| 38 | 老余汉化JAVA版 | 老余汉化JAVA版 | `3810637496` | 语言 / 汉化 | 2.9 MB | 0 | 启用 | [3810637496_老余汉化JAVA版_Java_界面简中汉化.md](3810637496_老余汉化JAVA版_Java_界面简中汉化.md) |
-| 39 | 统一模组汉化 | [B42]统一模组汉化 | `3556540080` | 汉化 | 39.1 MB | 0 | 启用 | [3556540080_B42统一模组汉化_模组文本汉化.md](3556540080_B42统一模组汉化_模组文本汉化.md) |
-| 40 | 统一中文汉化 | [B42]统一中文汉化 (排序置底) | `3556544454` | 汉化 | 765.1 MB | 0 | 启用 | [3556544454_B42统一中文汉化_排序置底_游戏本体文本汉化.md](3556544454_B42统一中文汉化_排序置底_游戏本体文本汉化.md) |
-| 41 | Trailers! 拖车合集 | Trailers! | `3330403100` | 载具 / 拖车 | 11.2 MB | 21 | 启用 | [3330403100_Trailers!_多用途拖车与货运挂车.md](3330403100_Trailers!_多用途拖车与货运挂车.md) |
-| 42 | Containers! 集装箱 | Containers! | `2625625421` | 载具 / 拖车 | 10.4 MB | 15 | 启用 | [2625625421_Containers!_可堆叠、可搬运的集装箱.md](2625625421_Containers!_可堆叠、可搬运的集装箱.md) |
-| 43 | M998 悍马 + M101A3 拖车 | '92 AM General M998 + M101A3 Trailer | `2642541073` | 载具 / 军用 | 21.8 MB | 60 | 启用 | [2642541073_92_AM_General_M998_+_M101A3_Trailer_军版悍马与货运拖车.md](2642541073_92_AM_General_M998_+_M101A3_Trailer_军版悍马与货运拖车.md) |
-| 44 | '70 Dodge Challenger | '70 Dodge Challenger | `2873290424` | 载具 / 轿车 | 18.2 MB | 39 | 启用 | [2873290424_70_Dodge_Challenger_70_年代美式肌肉车.md](2873290424_70_Dodge_Challenger_70_年代美式肌肉车.md) |
-| 45 | '91 Range Rover Classic | '91 RANGE ROVER Classic | `2409333430` | 载具 / 越野 | 18.1 MB | 36 | 启用 | [2409333430_91_RANGE_ROVER_Classic_经典英式越野_SUV.md](2409333430_91_RANGE_ROVER_Classic_经典英式越野_SUV.md) |
-| 46 | '88 Chevrolet S10 | '88 Chevrolet S10 | `2886832936` | 载具 / 卡车 | 9.5 MB | 22 | 启用 | [2886832936_88_Chevrolet_S10_紧凑型工作皮卡.md](2886832936_88_Chevrolet_S10_紧凑型工作皮卡.md) |
-| 47 | '92 Nissan Skyline GT-R R32 | '92 NISSAN Skyline GT-R (R32) | `2846036306` | 载具 / 轿车 | 18.1 MB | 47 | 启用 | [2846036306_92_NISSAN_Skyline_GT-R_R32_日系性能跑车.md](2846036306_92_NISSAN_Skyline_GT-R_R32_日系性能跑车.md) |
-| 48 | '84 Mercedes W460 | '84 Mercedes Benz W460 | `2805630347` | 载具 / 越野 | 26.8 MB | 66 | 启用 | [2805630347_84_Mercedes_Benz_W460_方盒子越野车.md](2805630347_84_Mercedes_Benz_W460_方盒子越野车.md) |
-| 49 | '87 Ford B700/F700 | '87 Ford B700/F700 Trucks | `3110911330` | 载具 / 卡车 | 30.0 MB | 64 | 启用 | [3110911330_87_Ford_B700F700_Trucks_中型卡车底盘.md](3110911330_87_Ford_B700F700_Trucks_中型卡车底盘.md) |
-| 50 | '90 Ford F350 救护车 | '90 Ford F350 Ambulance Type 1 | `2952802178` | 载具 / 公务 | 10.0 MB | 54 | 启用 | [2952802178_90_Ford_F350_Ambulance_Type_1_可当移动医疗点的救护车.md](2952802178_90_Ford_F350_Ambulance_Type_1_可当移动医疗点的救护车.md) |
-| 51 | '86 Ford Econoline E-150 | '86 Ford Econoline E150 | `2870394916` | 载具 / 卡车 | 27.4 MB | 63 | 启用 | [2870394916_86_Ford_Econoline_E150_厢式货车面包车.md](2870394916_86_Ford_Econoline_E150_厢式货车面包车.md) |
-| 52 | '78 AM General M35 军卡 | '78 AM General M35 Series Trucks | `2799152995` | 载具 / 军用 | 28.6 MB | 45 | 启用 | [2799152995_78_AM_General_M35_Series_Trucks_军用六驱卡车.md](2799152995_78_AM_General_M35_Series_Trucks_军用六驱卡车.md) |
-| 53 | '82 Jeep J10 | '82 Jeep J10 | `2886832257` | 载具 / 越野 | 12.5 MB | 25 | 启用 | [2886832257_82_Jeep_J10_全尺寸皮卡.md](2886832257_82_Jeep_J10_全尺寸皮卡.md) |
-| 54 | DeadWorks 房车框架 | DeadWorks Vehicle Framework | `3825724093` | 载具 / 房车 | 437.4 KB | 0 | 启用 | [3825724093_DeadWorks_Vehicle_Framework_新代_3D_房车的内饰水电家具内核.md](3825724093_DeadWorks_Vehicle_Framework_新代_3D_房车的内饰水电家具内核.md) |
-| 55 | 3D RV Van 服务端后端 | 3D Vans Host backend | `3821174725` | 载具 / 房车 | 107.6 KB | 0 | 启用 | [3821174725_3D_Vans_Host_backend_厢货车厢与家具的服务端权威.md](3821174725_3D_Vans_Host_backend_厢货车厢与家具的服务端权威.md) |
-| 56 | 3D RV Van 厢货 | Viewpoint - 3D RV Van | `3821174725` | 载具 / 房车 | 54.4 MB | 0 | 启用 | [3821174725_Viewpoint_-_3D_RV_Van_可自行装修的_3D_厢式房车.md](3821174725_Viewpoint_-_3D_RV_Van_可自行装修的_3D_厢式房车.md) |
-| 57 | DeadWorks 框架沙盒页 | DeadWorks Vehicle Framework Tweaks | `3826684062` | 载具 / 房车 | 510.6 KB | 0 | 启用 | [3826684062_DeadWorks_Vehicle_Framework_Tweaks_装甲水箱电池车重可调.md](3826684062_DeadWorks_Vehicle_Framework_Tweaks_装甲水箱电池车重可调.md) |
+> 体积、文件数、物品数按本地原件**完整目录**统计，不代表当前引擎实际加载数。“启用”仅指所选档案视图；默认启动仍用 b422-main。候选状态见各档案及 [兼容说明](../COMPATIBILITY.md)。
+
+| # | 中文名 | mod | 工作坊 ID | 分类 | 分发 | 体积 | 物品 | 状态 | 档案 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 僵尸伙伴 | ZombieBuddy | `3619862853` | 框架 / 渲染底层 | both | 13.8 MB | 0 | 日常 / 启用 | [查看](3619862853_ZombieBuddy_模组框架与3D动画核心.md) |
+| 2 | 视角重构 | Viewpoint | `3809306528` | 渲染 / 视角 | both | 32.6 MB | 0 | 日常 / 启用 | [查看](3809306528_Viewpoint_第一人称3D渲染核心.md) |
+| 3 | 少前2 整备室（PMX 预览） | R116 | `3834454638` | 角色 / 3D 模型 | both | 1.3 GB | 0 | 日常 / 启用 | [查看](3834454638_R116_把少前2角色模型搬进僵毁.md) |
+| 4 | 数值修复 | Fix NaN Stats [B42.13-42.22] | `3627071412` | 修复 | both | 253.7 KB | 0 | 日常 / 启用 | [查看](3627071412_Fix_NaN_Stats_B42.13-42.22_NaN属性修正.md) |
+| 5 | 性能修复 | PzPerformanceFixes | `3826630779` | 性能 | client | 1.1 MB | 0 | 日常 / 启用 | [查看](3826630779_PzPerformanceFixes_帧率与卡顿优化.md) |
+| 6 | 模组调度优化 | 模组统一调度与优化(subieliSuSir) | `3825832401` | 性能 | both | 217.3 KB | 0 | 日常 / 启用 | [查看](3825832401_模组统一调度与优化subieliSuSir_模组加载调度提速.md) |
+| 7 | 右键修复 | Viewpoint - Right Click Fix | `3819018807` | 操作 / 修复 | both | 677.1 KB | 0 | 日常 / 启用 | [查看](3819018807_Viewpoint_-_Right_Click_Fix_右键直接打开指向物体菜单.md) |
+| 8 | Neat界面框架 | NeatUI_Framework | `3508537032` | 框架 / UI | both | 2.2 MB | 0 | 日常 / 启用 | [查看](3508537032_NeatUI_Framework_制作界面框架.md) |
+| 9 | Neat制作 | Neat Crafting | `3502080466` | UI / 制作 | both | 4.1 MB | 0 | 日常 / 启用 | [查看](3502080466_Neat_Crafting_制作界面重制.md) |
+| 10 | 烹饪重制 | Project Cook | `3490188370` | 玩法 / 制作 | both | 7.6 MB | 0 | 日常 / 启用 | [查看](3490188370_Project_Cook_烹饪系统重做.md) |
+| 11 | 分类整理 | Better Sorting | `2313387159` | UI / 整理 | both | 1.7 MB | 0 | 日常 / 启用 | [查看](2313387159_Better_Sorting_库存分类菜单.md) |
+| 12 | 就近存取 | Proximity Inventory B42 | `2847184718` | UI / 便利 | both | 685.9 KB | 0 | 日常 / 启用 | [查看](2847184718_Proximity_Inventory_B42_周边容器一键取放.md) |
+| 13 | 地图图例 | Map Legend UI | `2710167561` | UI / 地图 | both | 787.8 KB | 0 | 日常 / 启用 | [查看](2710167561_Map_Legend_UI_地图图标说明.md) |
+| 14 | 统一模组汉化 | [B42]统一模组汉化 | `3556540080` | 汉化 | both | 42.4 MB | 0 | 日常 / 启用 | [查看](3556540080_B42统一模组汉化_模组文本汉化.md) |
+| 15 | 统一中文汉化 | [B42]统一中文汉化 (排序置底) | `3556544454` | 汉化 | both | 765.1 MB | 0 | 日常 / 启用 | [查看](3556544454_B42统一中文汉化_排序置底_游戏本体文本汉化.md) |
+| 16 | CleanUI 清爽界面 | CleanUI | `3437629766` | 界面 / 库存 | both | 15.5 MB | 0 | 日常 / 启用 | [查看](3437629766_CleanUI_更紧凑可配置的库存与拾取界面.md) |
+| 17 | CleanHotBar 清爽快捷栏 | CleanHotBar | `3461263912` | 界面 / HUD | both | 810.9 KB | 0 | 日常 / 启用 | [查看](3461263912_CleanHotBar_更清晰的可配置快捷栏.md) |
+| 18 | 自动整理 | Tidy Up Meister | `2769706949` | UI / 整理 | both | 1.3 MB | 0 | 日常 / 启用 | [查看](2769706949_Tidy_Up_Meister_库存自动归位.md) |
+| 19 | 沙盒选项 | [B42] Sandbox Options | `3386906181` | 工具 / 管理 | both | 8.9 MB | 0 | 日常 / 启用 | [查看](3386906181_B42_Sandbox_Options_游戏内改沙盒设置.md) |
+| 20 | 折叠梯 | Ladders?! B42.22+ (Craftable & movable ladder) | `3629835761` | 玩法 / 移动 | both | 358.0 KB | 6 | 日常 / 启用 | [查看](3629835761_Ladders!_B42.22+_Craftable_and_movable_ladder_B42.22_可制作、可移动的折叠梯.md) |
+| 21 | 视角屋顶 | Viewpoint - Roofs (WIP) | `3817294484` | 渲染 | both | 84.5 MB | 0 | 日常 / 启用 | [查看](3817294484_Viewpoint_-_Roofs_WIP_屋顶遮挡与显示.md) |
+| 22 | 封窗木条修复 | Viewpoint - Barricade Fix | `3815033191` | 渲染 / 修复 | both | 278.3 KB | 0 | 日常 / 启用 | [查看](3815033191_Viewpoint_-_Barricade_Fix_木质金属封窗位置修正.md) |
+| 23 | 3D 栅栏 | Viewpoint - 3D Fences | `3814486926` | 渲染 / Viewpoint 扩展 | both | 2.9 MB | 0 | 日常 / 启用 | [查看](3814486926_Viewpoint_-_3D_Fences_把栅栏变成有厚度的_3D_模型.md) |
+| 24 | 3D 生活道具 | Viewpoint: Living Props | `3816442251` | 渲染 / Viewpoint 扩展 | both | 78.0 MB | 0 | 日常 / 启用 | [查看](3816442251_Viewpoint_Living_Props_把室内外小物件变成_3D_模型.md) |
+| 25 | Raccoon City 地图家具 | Project Viewpoint Map Mod Furniture - Sprite Edition | `3816419379` | 渲染 / 地图 | both | 9.6 MB | 0 | 日常 / 启用 | [查看](3816419379_Project_Viewpoint_Map_Mod_Furniture_-_Sprite_Edition_给地图_mod_补_3D_家具.md) |
+| 26 | DLSS 帧生成 | Viewpoint DLSS Frame Generation | `3818838508` | 渲染 / 性能 | both | 4.3 MB | 0 | 日常 / 启用 | [查看](3818838508_Viewpoint_DLSS_Frame_Generation_给_Viewpoint_加_DLSS_帧生成.md) |
+| 27 | Viewpoint 视觉修复 | ViewpointVisualFixes | `3821308495` | 渲染 / 修复 | both | 91.5 KB | 0 | 日常 / 启用 | [查看](3821308495_ViewpointVisualFixes_修正_Viewpoint_的视觉细节.md) |
+| 28 | 地图烘焙修复 | Project Viewpoint: General Mod Map Fix | `3813929757` | 渲染 / 地图 | both | 25.8 KB | 0 | 日常 / 启用 | [查看](3813929757_Project_Viewpoint_General_Mod_Map_Fix_修复地图_mod_的烘焙与显示.md) |
+| 29 | 3D 货架 | Project Viewpoint: KK's Shelves in 3D | `3815931973` | 渲染 / Viewpoint 扩展 | both | 176.3 MB | 0 | 日常 / 启用 | [查看](3815931973_Project_Viewpoint_KKs_Shelves_in_3D_把货架变成有状态的_3D_模型.md) |
+| 30 | 调试菜单社区版 | B42/41调试菜单社区版 (DebugMenu_Community) | `3735377688` | 调试 / 工具 | both | 1.1 MB | 0 | 日常 / 启用 | [查看](3735377688_B4241调试菜单社区版_DebugMenu_Community_右键多级调试与管理员菜单.md) |
+| 31 | 载具资源库 | that DAMN Library | `3171167894` | 框架 / 素材 | both | 40.3 MB | 150 | 日常 / 启用 | [查看](3171167894_that_DAMN_Library_KI5载具公共资源.md) |
+| 32 | 通用函数库 | Yet Another PZ Library | `3624971238` | 框架 | both | 90.2 KB | 0 | 日常 / 启用 | [查看](3624971238_Yet_Another_PZ_Library_KI5脚本依赖库.md) |
+| 33 | Trailers! 拖车合集 | Trailers! | `3330403100` | 载具 / 拖车 | both | 11.2 MB | 12 | 日常 / 启用 | [查看](3330403100_Trailers!_多用途拖车与货运挂车.md) |
+| 34 | Containers! 集装箱 | Containers! | `2625625421` | 载具 / 拖车 | both | 10.4 MB | 6 | 日常 / 启用 | [查看](2625625421_Containers!_可堆叠、可搬运的集装箱.md) |
+| 35 | M998 悍马 + M101A3 拖车 | '92 AM General M998 + M101A3 Trailer | `2642541073` | 载具 / 军用 | both | 21.8 MB | 30 | 日常 / 启用 | [查看](2642541073_92_AM_General_M998_+_M101A3_Trailer_军版悍马与货运拖车.md) |
+| 36 | '70 Dodge Challenger | '70 Dodge Challenger | `2873290424` | 载具 / 轿车 | both | 18.2 MB | 30 | 日常 / 启用 | [查看](2873290424_70_Dodge_Challenger_70_年代美式肌肉车.md) |
+| 37 | '91 Range Rover Classic | '91 RANGE ROVER Classic | `2409333430` | 载具 / 越野 | both | 18.1 MB | 0 | 日常 / 启用 | [查看](2409333430_91_RANGE_ROVER_Classic_经典英式越野_SUV.md) |
+| 38 | '88 Chevrolet S10 | '88 Chevrolet S10 | `2886832936` | 载具 / 卡车 | both | 9.5 MB | 0 | 日常 / 启用 | [查看](2886832936_88_Chevrolet_S10_紧凑型工作皮卡.md) |
+| 39 | '92 Nissan Skyline GT-R R32 | '92 NISSAN Skyline GT-R (R32) | `2846036306` | 载具 / 轿车 | both | 18.1 MB | 39 | 日常 / 启用 | [查看](2846036306_92_NISSAN_Skyline_GT-R_R32_日系性能跑车.md) |
+| 40 | '84 Mercedes W460 | '84 Mercedes Benz W460 | `2805630347` | 载具 / 越野 | both | 26.8 MB | 57 | 日常 / 启用 | [查看](2805630347_84_Mercedes_Benz_W460_方盒子越野车.md) |
+| 41 | '87 Ford B700/F700 | '87 Ford B700/F700 Trucks | `3110911330` | 载具 / 卡车 | both | 30.0 MB | 0 | 日常 / 启用 | [查看](3110911330_87_Ford_B700F700_Trucks_中型卡车底盘.md) |
+| 42 | '90 Ford F350 救护车 | '90 Ford F350 Ambulance Type 1 | `2952802178` | 载具 / 公务 | both | 10.0 MB | 0 | 日常 / 启用 | [查看](2952802178_90_Ford_F350_Ambulance_Type_1_可当移动医疗点的救护车.md) |
+| 43 | '86 Ford Econoline E-150 | '86 Ford Econoline E150 | `2870394916` | 载具 / 卡车 | both | 27.4 MB | 55 | 日常 / 启用 | [查看](2870394916_86_Ford_Econoline_E150_厢式货车面包车.md) |
+| 44 | '78 AM General M35 军卡 | '78 AM General M35 Series Trucks | `2799152995` | 载具 / 军用 | both | 28.6 MB | 34 | 日常 / 启用 | [查看](2799152995_78_AM_General_M35_Series_Trucks_军用六驱卡车.md) |
+| 45 | '82 Jeep J10 | '82 Jeep J10 | `2886832257` | 载具 / 越野 | both | 12.5 MB | 0 | 日常 / 启用 | [查看](2886832257_82_Jeep_J10_全尺寸皮卡.md) |
+| 46 | KI5 载具零件修复 | Project Viewpoint - KI5 Vehicle Parts Fix | `3815019204` | 修复 / Viewpoint 扩展 | both | 175.3 KB | 0 | 日常 / 启用 | [查看](3815019204_Project_Viewpoint_-_KI5_Vehicle_Parts_Fix_修正_KI5_载具零件的显示位置.md) |
+| 47 | 载具外壳修复 | Viewpoint - Vehicle Shell Fix | `3819801335` | 修复 / Viewpoint 扩展 | both | 40.5 KB | 0 | 日常 / 启用 | [查看](3819801335_Viewpoint_-_Vehicle_Shell_Fix_修正_Viewpoint_载具_3D_外壳.md) |
+| 48 | 载具零件喷漆 | Viewpoint - Part Paint | `3834561718` | 修复 / Viewpoint 扩展 | both | 714.4 KB | 0 | 日常 / 启用 | [查看](3834561718_Viewpoint_-_Part_Paint_给_3D_载具零件上色.md) |
+| 49 | 老余汉化JAVA版 | 老余汉化JAVA版 | `3810637496` | 语言 / 汉化 | both | 3.1 MB | 0 | 日常 / 启用 | [查看](3810637496_老余汉化JAVA版_Java_界面简中汉化.md) |
+| 50 | VSGirlBody SFW 身形 | VSGirlBody_S_SFW | `3640496116` | 角色 / 外观 | client | 75.2 MB | 17 | 日常 / 启用 | [查看](3640496116_VSGirlBody_S_SFW_女性角色身形与服装适配.md) |
+| 51 | VSGirlBody 修复 | VSGirlBody_Fix | `3640496116` | 角色 / 外观 | client | 82.7 KB | 0 | 日常 / 启用 | [查看](3640496116_VSGirlBody_Fix_身形包的兼容修复.md) |
+| 52 | 坐标显示 | Where Am I? | `3097650043` | UI / 工具 | client | 2.2 MB | 0 | 日常 / 启用 | [查看](3097650043_Where_Am_I_显示所在位置.md) |
+| 53 | 6282 模型库 | 6282 3D models for Viewpoint [sour_kisel] | `3810302175` | 渲染 / 模型资源 | both | 272.7 MB | 0 | 兼容候选 / 启用 | [查看](3810302175_6282_3D_models_for_Viewpoint_sour_kisel_3D模型与贴图素材库.md) |
+| 54 | 3D 门与车库门 | Project Viewpoint - 3D Doors, Gates & Garages | `3818859807` | 渲染 / 世界物件 | both | 65.6 MB | 0 | 兼容候选 / 启用 | [查看](3818859807_Project_Viewpoint_-_3D_Doors_Gates_and_Garages_门与栅门的立体模型替换.md) |
+| 55 | KI5 血迹材质修复 | Project Viewpoint - KI5 Blood Texture Fix | `3819702412` | 修复 / 载具材质 | both | 72.1 KB | 0 | 兼容候选 / 启用 | [查看](3819702412_Project_Viewpoint_-_KI5_Blood_Texture_Fix_修正KI5车辆血迹材质.md) |
+| 56 | 载具驾驶舱内饰 | Viewpoint Vehicle Interiors | `3826550325` | 渲染 / 载具内饰 | both | 96.3 MB | 0 | 兼容候选 / 启用 | [查看](3826550325_Viewpoint_Vehicle_Interiors_座椅仪表与顶灯细节.md) |
+| 57 | 厢式房车后端 | 3D Vans Host backend | `3821174725` | 框架 / 房车 | both | 107.6 KB | 0 | 兼容候选 / 启用 | [查看](3821174725_3D_Vans_Host_backend_车厢家具与乘员同步后端.md) |
+| 58 | 3D 厢式房车 | Viewpoint - 3D RV Van | `3821174725` | 玩法 / 房车 | both | 54.4 MB | 0 | 兼容候选 / 启用 | [查看](3821174725_Viewpoint_-_3D_RV_Van_可摆家具的厢式房车.md) |
+| 59 | DeadWorks 载具框架 | DeadWorks Vehicle Framework | `3825724093` | 框架 / 房车 | both | 437.4 KB | 0 | 兼容候选 / 启用 | [查看](3825724093_DeadWorks_Vehicle_Framework_房车内饰水电家具内核.md) |
+| 60 | DeadWorks 沙盒调节 | DeadWorks Vehicle Framework Tweaks | `3826684062` | 玩法 / 房车设置 | both | 509.0 KB | 0 | 兼容候选 / 启用 | [查看](3826684062_DeadWorks_Vehicle_Framework_Tweaks_装甲水箱电池车重可调.md) |
+| 61 | DeadWorks Nomad 房车 | Nomad RV | `3820158673` | 载具 / 房车 | both | 56.6 MB | 14 | 兼容候选 / 启用 | [查看](3820158673_Nomad_RV_Nomad房车的DeadWorks分支.md) |
+| 62 | DeadWorks Dale 房车 | Dale's Chieftain RV | `3820158673` | 载具 / 房车 | both | 53.5 MB | 0 | 兼容候选 / 启用 | [查看](3820158673_Dales_Chieftain_RV_Dale房车的DeadWorks分支.md) |
+| 63 | VSGirlBody 动态身体 | VSGirlBodyBoobBounce(Requires ZombieBuddy) | `3640496116` | 角色 / 动画 | both | 127.3 KB | 0 | 兼容候选 / 启用 | [查看](3640496116_VSGirlBodyBoobBounceRequires_ZombieBuddy_身体模型动态效果.md) |
+| 64 | VSGirlBody 动态视角桥接 | VSGirlBodyBoobBounceViewpoint | `3640496116` | 角色 / 渲染桥接 | both | 56.2 KB | 0 | 兼容候选 / 启用 | [查看](3640496116_VSGirlBodyBoobBounceViewpoint_动态身体的Viewpoint桥接.md) |
 
 ## 查物品 id
 
-- 直接 `grep -r 'Base.某id' mod_archives/`，命中文件就是加它的 mod
-- 改了 pack 或更新了 mod：`python tools/mod_archive.py --profile play` 重跑
-
+- 直接 `grep -r 'Base.某id' mod_archives/`，命中文件就是加它的 mod。
+- 改了 profile 或更新了 mod：`python tools/mod_archive.py --profile b422-compat` 重跑。

@@ -1,6 +1,7 @@
 # '92 Nissan Skyline GT-R R32（'92 NISSAN Skyline GT-R (R32)）
 
-**日系性能跑车** · 分类：载具 / 轿车 · 2846036306 · 启用 · 加载位次 35
+**日系性能跑车** · 分类：载具 / 轿车 · `2846036306` · 启用 · 加载位次 37
+归属：**日常组合**；档案视图 `b422-compat`。
 
 ## 它做什么
 
@@ -13,10 +14,13 @@
 | 工作坊 ID | `2846036306` |
 | mod id | `92nissanGTR` |
 | 文件夹 | `92nissanGTR` |
-| 版本 / 适配 | `42.0.0` … `-` |
+| Mod 版本 | `-` |
+| 原件适配 | `42.20.0` … `-` |
+| 当前生效适配 | `42.20.0` … `-`（原件） |
+| 元数据来源 | `42.20/mod.info` |
 | 作者 | KI5 |
 | 工作坊更新时间 | 2026-10-27 |
-| 分发端 | both |
+| 分发端 | both（双端） |
 | 体积 / 文件 | 18.1 MB · 351 文件（lua 31，client 12，server 11；贴图 211；模型 6；翻译 9） |
 
 ## 依赖与冲突
@@ -27,18 +31,10 @@
 
 ## 内容清单
 
-脚本物品 **47** 条：
+脚本物品 **39** 条：
 
 | 完整 id | 显示名 | 类型 |
 | --- | --- | --- |
-| `Base.1` | - | - |
-| `Base.2` | - | - |
-| `Base.4` | - | - |
-| `Base.9` | - | - |
-| `Base.10` | - | - |
-| `Base.8` | - | - |
-| `Base.5` | - | - |
-| `Base.3` | - | - |
 | `Base.R32Magazine` | 92 Nissan Skyline R32 Auto Manual | Literature |
 | `Base.R32Tire0` | 92 Nissan Skyline R32 Stock Tire | Normal |
 | `Base.R32Tire1` | 92 Nissan Skyline R32 Performance Tire | Normal |
@@ -87,15 +83,18 @@
 
 双端都要装。
 
-本机实测文件构成：客户端有 lua；服务端有 lua。
+当前 profile：both（双端）。
+
+本机文件构成：客户端有 lua；服务端有 lua。
 
 ## 实测与排查
 
-18.1 MB；require damnlib。
+require damnlib；47 个脚本物品、2 个载具脚本、27 条配方。
 
 ```
-python lab.py check --profile play
-grep -a '92nissanGTR' runs/<trial>/console.log
+cd A004
+python lab.py check --profile b422-compat
+grep -a '92nissanGTR' runs/<trial>/*console.log
 ```
 
 ## 作者原话
@@ -107,6 +106,5 @@ This mod adds NISSAN Skyline GT-R (R32) from 1992
 ## 来源
 
 - 工作坊：`https://steamcommunity.com/sharedfiles/filedetails/?id=2846036306`
-- 本地快照：`workspace/mods_library/2846036306/mods/92nissanGTR`
-- 档案生成：`python tools/mod_archive.py --profile play`
-
+- 本地原件：`A004/workspace/mods_library/2846036306/mods/92nissanGTR`
+- 档案生成：`python tools/mod_archive.py --profile b422-compat`

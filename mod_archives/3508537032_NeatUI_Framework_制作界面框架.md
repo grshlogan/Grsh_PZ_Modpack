@@ -1,6 +1,7 @@
 # Neat界面框架（NeatUI_Framework）
 
-**制作界面框架** · 分类：框架 / UI · 3508537032 · 启用 · 加载位次 42
+**制作界面框架** · 分类：框架 / UI · `3508537032` · 启用 · 加载位次 20
+归属：**日常组合**；档案视图 `b422-compat`。
 
 ## 它做什么
 
@@ -13,17 +14,20 @@ Neat 系列的界面框架，提供制作面板的布局、皮肤与交互组件
 | 工作坊 ID | `3508537032` |
 | mod id | `NeatUI_Framework` |
 | 文件夹 | `NeatUI_Framework` |
-| 版本 / 适配 | `42.0.2` … `-` |
+| Mod 版本 | `1.0.10` |
+| 原件适配 | `42.0.2` … `-` |
+| 当前生效适配 | `42.0.2` … `-`（原件） |
+| 元数据来源 | `42/mod.info` |
 | 作者 | Rocco, Afyrmo |
 | 工作坊更新时间 | 2026-10-31 |
-| 分发端 | both |
+| 分发端 | both（双端） |
 | 体积 / 文件 | 2.2 MB · 98 文件（lua 11，client 11，server 0；贴图 62；模型 0；翻译 0） |
 
 ## 依赖与冲突
 
 - 需要：无
 - 互斥：无
-- 被依赖：`Project_Cook`、`Neat_Crafting`
+- 被依赖：`Neat_Crafting`、`Project_Cook`、`CleanUI`
 
 ## 内容清单
 
@@ -31,17 +35,20 @@ Neat 系列的界面框架，提供制作面板的布局、皮肤与交互组件
 
 ## 双端与联机
 
-双端。
+双端挂载。
 
-本机实测文件构成：客户端有 lua；服务端无 lua（只挂载）。
+当前 profile：both（双端）。
+
+本机文件构成：客户端有 lua；服务端无 lua（只挂载）。
 
 ## 实测与排查
 
-Neat_Crafting 与 Project_Cook 都 require 它。
+Neat_Crafting、Project_Cook、CleanUI 都 require 它。
 
 ```
-python lab.py check --profile play
-grep -a 'NeatUI_Framework' runs/<trial>/console.log
+cd A004
+python lab.py check --profile b422-compat
+grep -a 'NeatUI_Framework' runs/<trial>/*console.log
 ```
 
 ## 作者原话
@@ -53,6 +60,5 @@ Shared UI framework for Neat mods, providing reusable interface components, styl
 ## 来源
 
 - 工作坊：`https://steamcommunity.com/sharedfiles/filedetails/?id=3508537032`
-- 本地快照：`workspace/mods_library/3508537032/mods/NeatUI_Framework`
-- 档案生成：`python tools/mod_archive.py --profile play`
-
+- 本地原件：`A004/workspace/mods_library/3508537032/mods/NeatUI_Framework`
+- 档案生成：`python tools/mod_archive.py --profile b422-compat`

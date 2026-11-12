@@ -1,10 +1,11 @@
 # 性能修复（PzPerformanceFixes）
 
-**帧率与卡顿优化** · 分类：性能 · 3826630779 · 启用 · 加载位次 50
+**帧率与卡顿优化** · 分类：性能 · `3826630779` · 启用 · 加载位次 17
+归属：**日常组合**；档案视图 `b422-compat`。
 
 ## 它做什么
 
-针对 B42 的性能补丁：物品扫描从 12 秒降到 2 秒、Lua 列表 9 秒到 2 秒、开车最差帧从 400-600ms 降到 250ms。
+针对 B42 的性能补丁：降低物品扫描与 Lua 列表开销，改善驾驶时的最差帧。
 
 ## 概览
 
@@ -13,10 +14,13 @@
 | 工作坊 ID | `3826630779` |
 | mod id | `PzPerformanceFixes` |
 | 文件夹 | `PzPerformanceFixes` |
-| 版本 / 适配 | `42.0.0` … `-` |
+| Mod 版本 | `1.18` |
+| 原件适配 | `42.0.0` … `-` |
+| 当前生效适配 | `42.0.0` … `-`（原件） |
+| 元数据来源 | `42/mod.info` |
 | 作者 | Alex |
 | 工作坊更新时间 | 2026-11-03 |
-| 分发端 | both |
+| 分发端 | client（仅客户端） |
 | 体积 / 文件 | 1.1 MB · 89 文件（lua 0，client 0，server 0；贴图 2；模型 0；翻译 0；Java 源码 76、jar/class 1） |
 
 ## 依赖与冲突
@@ -31,17 +35,20 @@
 
 ## 双端与联机
 
-双端。
+当前 profile 为 client-only：只装客户端；服务端不加载，进服后也不在服务端 Mods= 列表中。
 
-本机实测文件构成：客户端无 lua，但带 Java 源码补丁；服务端无 lua（只挂载）。
+**当前 profile：client-only（仅客户端）。** 服务端 `Mods=` 不含此条；联机进服后客户端会按服务端列表重载，因此该项在服务器内不会保留。
+
+本机文件构成：客户端无 lua，但带 Java 源码补丁；服务端无 lua（只挂载）。
 
 ## 实测与排查
 
-需要 ZombieBuddy ≥ 2.3.0。
+需要 ZombieBuddy ≥2.3.0；当前 profile 客户端启用，89 个文件，属于 Java/JAR 补丁。
 
 ```
-python lab.py check --profile play
-grep -a 'PzPerformanceFixes' runs/<trial>/console.log
+cd A004
+python lab.py check --profile b422-compat
+grep -a 'PzPerformanceFixes' runs/<trial>/*console.log
 ```
 
 ## 作者原话
@@ -53,6 +60,5 @@ Faster loading, fewer hitches and fewer vanilla errors for Build 42. Needs Zombi
 ## 来源
 
 - 工作坊：`https://steamcommunity.com/sharedfiles/filedetails/?id=3826630779`
-- 本地快照：`workspace/mods_library/3826630779/mods/PzPerformanceFixes`
-- 档案生成：`python tools/mod_archive.py --profile play`
-
+- 本地原件：`A004/workspace/mods_library/3826630779/mods/PzPerformanceFixes`
+- 档案生成：`python tools/mod_archive.py --profile b422-compat`

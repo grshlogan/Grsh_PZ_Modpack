@@ -1,0 +1,517 @@
+{
+  "_note": "B42.22 正式档案人工目录：52 条日常 + 12 条兼容候选。brief/cat/cn 为标题、简介和分类；what/mp/note 为说明。候选只完成离线检查，非运行通过。自动字段由 tools/mod_archive.py 从 A004 原件与 Overlay 生成。",
+  "mods": {
+    "3619862853": {
+      "cn": "僵尸伙伴",
+      "brief": "模组框架与3D动画核心",
+      "cat": "框架 / 渲染底层",
+      "what": "给 Java 模组提供植入通道，并提供 3D 视角、骨骼动画与模型替换的底层支持；Viewpoint 全家桶都建立在它之上。",
+      "mp": "双端都要装。原生库 zbNative.dll、ZombieBuddy.jar、.zbs 要落在游戏根目录，客户端用 -agentlib:zbNative 启动。",
+      "note": "迁移前 B42.22.2 日志出现 [ZB] activating ZombieBuddy v2.3.4、[ZB] Agent installed.；当前根补丁修复服务端角色判断。AnimSets 目录缺失是已知未阻断启动的警告，不能代替玩法验收。"
+    },
+    "3809306528": {
+      "cn": "视角重构",
+      "brief": "第一人称3D渲染核心",
+      "cat": "渲染 / 视角",
+      "what": "把原版等距视角改成可旋转、可变焦距的第一人称/第三人称 3D 渲染，是整套 Viewpoint 体验的主体。",
+      "mp": "双端挂载；改的是渲染管线，服务端只同步角色状态。",
+      "note": "当前本地版本 0.1.6.2，mod.info 锁定 42.22，require ZombieBuddy。R116 0.3.51 只接受该官方 JAR 指纹，不与 nightly/RC4 混用。"
+    },
+    "3834454638": {
+      "cn": "少前2 整备室（PMX 预览）",
+      "brief": "把少前2角色模型搬进僵毁",
+      "cat": "角色 / 3D 模型",
+      "what": "通过 Java 插件提供 PMX 模型、GF2 角色数据、语音与材质着色器。原设计用右键整备室打开预览/换装窗口；本机 MP/SP 入口差异已停止追查，不承诺单人入口可用。",
+      "mp": "模型与语音走客户端 Java 插件，服务端加载 Lua 挂载；作者要求双端同版本 Viewpoint。",
+      "note": "本地版本 0.3.51；mod.info 声明 require ZombieBuddy，运行时校验官方 Viewpoint 0.1.6.2 的精确 JAR 指纹。新版已内置 GF2，不加旧 AimohGF2Eclipse；客户端入口 Overlay 已撤回。"
+    },
+    "3627071412": {
+      "cn": "数值修复",
+      "brief": "NaN属性修正",
+      "cat": "修复",
+      "what": "修复角色属性被算成 NaN 后永久卡死的问题（饥饿、口渴、体重等）。",
+      "mp": "双端；属性在服务端结算，只装客户端无效。",
+      "note": "versionMin=42.13.0；已有迁移前 B42.22.2 加载记录，未逐项验证数值修复效果。"
+    },
+    "3826630779": {
+      "cn": "性能修复",
+      "brief": "帧率与卡顿优化",
+      "cat": "性能",
+      "what": "针对 B42 的性能补丁：降低物品扫描与 Lua 列表开销，改善驾驶时的最差帧。",
+      "mp": "当前 profile 为 client-only：只装客户端；服务端不加载，进服后也不在服务端 Mods= 列表中。",
+      "note": "需要 ZombieBuddy ≥2.3.0；当前 profile 客户端启用，89 个文件，属于 Java/JAR 补丁。"
+    },
+    "3825832401": {
+      "cn": "模组调度优化",
+      "brief": "模组加载调度提速",
+      "cat": "性能",
+      "what": "国内作者 subieliSuSir 的模组调度与优化核心，减少模组初始化阶段的重复扫描。",
+      "mp": "双端挂载。",
+      "note": "需要 ZombieBuddy；与 PzPerformanceFixes 同装时按 loadOrder 先后加载。"
+    },
+    "3819018807": {
+      "cn": "右键修复",
+      "brief": "右键直接打开指向物体菜单",
+      "cat": "操作 / 修复",
+      "what": "第一/第三人称且显示光标时，右键直接打开光标指向物体的交互菜单，不必先左键选中。",
+      "mp": "双端挂载；输入逻辑在客户端。",
+      "note": "Java 模块 ViewpointRightClick.jar，需 ZombieBuddy 批准；当前本地版本 42.22。"
+    },
+    "3508537032": {
+      "cn": "Neat界面框架",
+      "brief": "制作界面框架",
+      "cat": "框架 / UI",
+      "what": "Neat 系列的界面框架，提供制作面板的布局、皮肤与交互组件。",
+      "mp": "双端挂载。",
+      "note": "Neat_Crafting、Project_Cook、CleanUI 都 require 它。"
+    },
+    "3502080466": {
+      "cn": "Neat制作",
+      "brief": "制作界面重制",
+      "cat": "UI / 制作",
+      "what": "把原版制作面板换成可分栏、可搜索、可收藏的新界面。",
+      "mp": "双端；配方数据以服务端为准。",
+      "note": "require NeatUI_Framework；当前本地包使用 42.13 适配目录，versionMin=42.13，无 versionMax。"
+    },
+    "3490188370": {
+      "cn": "烹饪重制",
+      "brief": "烹饪系统重做",
+      "cat": "玩法 / 制作",
+      "what": "重做烹饪流程：食材组合、菜谱解锁、成品属性都换了一套规则。",
+      "mp": "双端；配方与食物属性由服务端裁决，两端版本需一致。",
+      "note": "require NeatUI_Framework；当前本地包使用 42.15 适配目录，versionMin=42.15，无 versionMax。"
+    },
+    "2313387159": {
+      "cn": "分类整理",
+      "brief": "库存分类菜单",
+      "cat": "UI / 整理",
+      "what": "给容器和背包加分类标签页，按类型快速过滤物品。",
+      "mp": "双端；纯 UI，不改物品数据。",
+      "note": "老牌 mod（B41 起就在用）；已有迁移前 B42.22.2 加载记录，无版本上下限。"
+    },
+    "2847184718": {
+      "cn": "就近存取",
+      "brief": "周边容器一键取放",
+      "cat": "UI / 便利",
+      "what": "把附近容器（箱子、柜子、后备箱）里的物品汇总到一个面板里直接取放，不用逐个打开。",
+      "mp": "双端；服务端校验距离，属于服务端授权型便利 mod。",
+      "note": "B42 重制版；物品移动走原版容器接口，不复制物品；无版本字段。"
+    },
+    "2710167561": {
+      "cn": "地图图例",
+      "brief": "地图图标说明",
+      "cat": "UI / 地图",
+      "what": "给大地图加图例：每种标记代表什么、当前视口比例尺多少。",
+      "mp": "双端挂载；客户端显示。",
+      "note": "mod.info versionMin=41.65；迁移前 B42.22.2 已加载，地图图例的实际界面仍待验收。"
+    },
+    "3556540080": {
+      "cn": "统一模组汉化",
+      "brief": "模组文本汉化",
+      "cat": "汉化",
+      "what": "把常见模组的界面与物品文本翻成中文，只覆盖别的 mod 的字符串。",
+      "mp": "双端；服务端也必须列入，避免进服后客户端按服务端列表重载时丢翻译。",
+      "note": "必须排在加载顺序最后一段，位于 B42Trans_CN 之前、LaoYuTranslationJava 之后；此规则对日常与兼容组合相同。"
+    },
+    "3556544454": {
+      "cn": "统一中文汉化",
+      "brief": "游戏本体文本汉化",
+      "cat": "汉化",
+      "what": "游戏本体的完整中文化：UI、物品、提示、教程文本。",
+      "mp": "双端；同上，服务端必须加载。",
+      "note": "802 MB；必须排在加载顺序最后（当前 loadOrder 末位）；language.json 为 Chinese (Simplified)。"
+    },
+    "3437629766": {
+      "cn": "CleanUI 清爽界面",
+      "brief": "更紧凑可配置的库存与拾取界面",
+      "cat": "界面 / 库存",
+      "what": "提供更紧凑、可配置的库存和拾取界面：容器栏、拖拽排序、搜索/转移快捷键、排序与列控制、重量显示、可折叠物品组等；需要 NeatUI Framework。",
+      "mp": "双端挂载；界面逻辑在客户端，服务端只保证 mod 列表一致。",
+      "note": "本地 42.22 适配目录 versionMin=42.22.0；需 NeatUI_Framework；1311 个文件（含旧版本目录）。"
+    },
+    "3461263912": {
+      "cn": "CleanHotBar 清爽快捷栏",
+      "brief": "更清晰的可配置快捷栏",
+      "cat": "界面 / HUD",
+      "what": "更干净、信息更丰富的 B42 快捷栏：显示物品状态、弹药和液体，改进手持槽，内置重排、透明度与兼容槽拖拽高亮。",
+      "mp": "双端挂载；HUD 逻辑在客户端。",
+      "note": "本地 42.15 适配；versionMin=42.15；与 qdx_item_condition、TheStar 互斥。"
+    },
+    "2769706949": {
+      "cn": "自动整理",
+      "brief": "库存自动归位",
+      "cat": "UI / 整理",
+      "what": "一键把背包和容器里的物品按规则排序归位，支持自定义优先级。",
+      "mp": "双端；只改本地排序视图。",
+      "note": "mod id 是 P4TidyUpMeister；已有迁移前 B42.22.2 加载记录。"
+    },
+    "3386906181": {
+      "cn": "沙盒选项",
+      "brief": "游戏内改沙盒设置",
+      "cat": "工具 / 管理",
+      "what": "在游戏内直接查看和修改沙盒选项，不用退出到主菜单重开世界。",
+      "mp": "双端；联机下只有管理员能改。",
+      "note": "带 42 / 42.15 / 42.20 三档适配目录；当前 profile 双端加载。"
+    },
+    "3629835761": {
+      "cn": "折叠梯",
+      "brief": "B42.22 可制作、可移动的折叠梯",
+      "cat": "玩法 / 移动",
+      "what": "添加可折叠、可制作和搬运的梯子，用于上下楼层与翻越障碍；适配 B42.22。",
+      "mp": "双端；服务端有 lua，物品/配方需两端一致。",
+      "note": "mod id=Ladders4222，versionMin=42.22；不要使用 Ladders42204（max 42.21.4）。当前本地包 107 个文件，13 个脚本物品。"
+    },
+    "3817294484": {
+      "cn": "视角屋顶",
+      "brief": "屋顶遮挡与显示",
+      "cat": "渲染",
+      "what": "处理屋顶在第一人称下的遮挡关系：进屋自动隐藏、抬头可见完整屋面。",
+      "mp": "双端挂载。",
+      "note": "工作坊日期快照 2026-11-06；迁移前 B42.22.2 已加载，屋顶遮挡实际效果未验收。"
+    },
+    "3815033191": {
+      "cn": "封窗木条修复",
+      "brief": "木质/金属封窗位置修正",
+      "cat": "渲染 / 修复",
+      "what": "修正 Viewpoint 下木质与金属封窗木条的摆放位置，并把贴图还原成原版，配合 2D 窗户/门更自然。",
+      "mp": "双端挂载；Java 补丁。",
+      "note": "兼容 Fitted Barricades / Fenced Barricades；jar=ViewpointBarricades.jar；需 Viewpoint。"
+    },
+    "3735377688": {
+      "cn": "调试菜单社区版",
+      "brief": "右键多级调试与管理员菜单",
+      "cat": "调试 / 工具",
+      "what": "右键多级菜单：生成物品/车辆、传送、世界与建造调试、笔刷等；管理员判定后出现，部分子功能另需 -debug。",
+      "mp": "双端挂载；菜单是客户端 UI，服务端只需 mod 列表一致。",
+      "note": "当前本地包 1.1 MB / 135 文件；mod id=PZ_Debug；与 CheatMenuRebuild 不共存。"
+    },
+    "3171167894": {
+      "cn": "载具资源库",
+      "brief": "KI5载具公共资源",
+      "cat": "框架 / 素材",
+      "what": "KI5 系列载具共用的资源库：车门、引擎盖、轮胎等 276 条零件物品和大量模型，所有 KI5 车都依赖它。",
+      "mp": "双端；缺了任何 KI5 载具都会报缺物品。",
+      "note": "作者标注 deprecated，但仍被现有 KI5 载具依赖；42 MB / 2,094 文件；276 个脚本物品。"
+    },
+    "3624971238": {
+      "cn": "通用函数库",
+      "brief": "KI5脚本依赖库",
+      "cat": "框架",
+      "what": "KI5 模组共用的 Lua 工具函数集合，本身不添加任何内容。",
+      "mp": "双端。",
+      "note": "mod id=YAPZLib，文件夹 YetAnotherPZLib；本身无内容。"
+    },
+    "3330403100": {
+      "cn": "Trailers! 拖车合集",
+      "brief": "多用途拖车与货运挂车",
+      "cat": "载具 / 拖车",
+      "what": "KI5 生态的拖车、平板车与货箱挂车，可挂到皮卡/卡车后面拖运物资。",
+      "mp": "双端都要装；服务端缺脚本会报 required mod not found。",
+      "note": "require damnlib；21 个脚本物品、7 个载具脚本、17 条配方。"
+    },
+    "2625625421": {
+      "cn": "Containers! 集装箱",
+      "brief": "可堆叠、可搬运的集装箱",
+      "cat": "载具 / 拖车",
+      "what": "给基地和车队补上可堆叠集装箱，配合拖车/叉车搬运物资。",
+      "mp": "双端都要装。",
+      "note": "require damnlib；15 个脚本物品、9 个载具脚本、6 条配方。"
+    },
+    "2642541073": {
+      "cn": "M998 悍马 + M101A3 拖车",
+      "brief": "军版悍马与货运拖车",
+      "cat": "载具 / 军用",
+      "what": "'92 AM General M998 悍马，附 M101A3 货运拖车；另有 Extra Textures 子 mod 未启用。",
+      "mp": "双端都要装。",
+      "note": "require damnlib；60 个脚本物品、3 个载具脚本、27 条配方；当前 22.8 MB。"
+    },
+    "2873290424": {
+      "cn": "'70 Dodge Challenger",
+      "brief": "70 年代美式肌肉车",
+      "cat": "载具 / 轿车",
+      "what": "1970 Dodge Challenger，多种涂装与改装件。",
+      "mp": "双端都要装。",
+      "note": "require damnlib；39 个脚本物品、5 个载具脚本、33 条配方。"
+    },
+    "2409333430": {
+      "cn": "'91 Range Rover Classic",
+      "brief": "经典英式越野 SUV",
+      "cat": "载具 / 越野",
+      "what": "1991 Range Rover Classic，适合土路与越野。",
+      "mp": "双端都要装。",
+      "note": "require damnlib；36 个脚本物品、2 个载具脚本、25 条配方。"
+    },
+    "2886832936": {
+      "cn": "'88 Chevrolet S10",
+      "brief": "紧凑型工作皮卡",
+      "cat": "载具 / 卡车",
+      "what": "1988 Chevrolet S10 皮卡，油耗低、车斗可装货。",
+      "mp": "双端都要装。",
+      "note": "require damnlib；22 个脚本物品、1 个载具脚本、17 条配方。"
+    },
+    "2846036306": {
+      "cn": "'92 Nissan Skyline GT-R R32",
+      "brief": "日系性能跑车",
+      "cat": "载具 / 轿车",
+      "what": "1992 Nissan Skyline GT-R R32，速度快、适合公路。",
+      "mp": "双端都要装。",
+      "note": "require damnlib；47 个脚本物品、2 个载具脚本、27 条配方。"
+    },
+    "2805630347": {
+      "cn": "'84 Mercedes W460",
+      "brief": "方盒子越野车",
+      "cat": "载具 / 越野",
+      "what": "1984 Mercedes-Benz W460，越野性能好、车体结实。",
+      "mp": "双端都要装。",
+      "note": "require damnlib；真实 mod id 是 84merc（不是文件夹 84mercW460）；66 个脚本物品、4 个载具脚本、31 条配方。"
+    },
+    "3110911330": {
+      "cn": "'87 Ford B700/F700",
+      "brief": "中型卡车底盘",
+      "cat": "载具 / 卡车",
+      "what": "1987 Ford B700/F700 卡车，含军用、囚车、校车等变体。",
+      "mp": "双端都要装。",
+      "note": "require damnlib；64 个脚本物品、6 个载具脚本、51 条配方；服务端日志出现 B700SideStorage/B700Mudflaps 模板缺失，是上游脚本问题，不阻止启动。"
+    },
+    "2952802178": {
+      "cn": "'90 Ford F350 救护车",
+      "brief": "可当移动医疗点的救护车",
+      "cat": "载具 / 公务",
+      "what": "1990 Ford F350 救护车，带医疗舱与警灯。",
+      "mp": "双端都要装。",
+      "note": "require damnlib；54 个脚本物品、2 个载具脚本、20 条配方。"
+    },
+    "2870394916": {
+      "cn": "'86 Ford Econoline E-150",
+      "brief": "厢式货车/面包车",
+      "cat": "载具 / 卡车",
+      "what": "1986 Ford Econoline E-150，载货量大；另有 Mutt Cutts、Mystery Machine、Payday、Expanded 四个子 mod 未启用。",
+      "mp": "双端都要装。",
+      "note": "require damnlib；63 个脚本物品、12 个载具脚本、24 条配方；当前包 28.7 MB，涂装子 mod 未启用。"
+    },
+    "2799152995": {
+      "cn": "'78 AM General M35 军卡",
+      "brief": "军用六驱卡车",
+      "cat": "载具 / 军用",
+      "what": "1978 AM General M35 系列，含加油车、水罐车、救援车等变体子 mod（未启用）。",
+      "mp": "双端都要装。",
+      "note": "require damnlib；45 个脚本物品、5 个载具脚本、20 条配方；当前包 30.0 MB，变体子 mod 未启用。"
+    },
+    "2886832257": {
+      "cn": "'82 Jeep J10",
+      "brief": "全尺寸皮卡",
+      "cat": "载具 / 越野",
+      "what": "1982 Jeep J10 皮卡，另有 Mellow Yellow 涂装子 mod 未启用。",
+      "mp": "双端都要装。",
+      "note": "require damnlib；25 个脚本物品、4 个载具脚本、17 条配方。"
+    },
+    "3810637496": {
+      "cn": "老余汉化JAVA版",
+      "brief": "Java 界面简中汉化",
+      "cat": "语言 / 汉化",
+      "what": "为 Viewpoint、PZ_Optimization、高级投掷、QOL、屋顶修复、第一人称建造、第三人称相机、跑酷、开镜、载具界面等 Java 界面提供简中，并补光影包中文。",
+      "mp": "双端；服务端也加载以保持进服后的汉化。",
+      "note": "需 ZombieBuddy；当前 loadOrder 在统一模组汉化之前；3.0 MB / 30 文件。"
+    },
+    "3640496116-variableskinsfw": {
+      "cn": "VSGirlBody SFW 身形",
+      "brief": "女性角色身形与服装适配",
+      "cat": "角色 / 外观",
+      "what": "VariableSkin 系列的 SFW 女性身形包，提供角色身体与服装的替换资源；不包含成人内容。",
+      "mp": "当前 profile 为 client-only：只装客户端；服务端不加载，进服后会被服务端 Mods= 列表丢弃。",
+      "note": "工作坊 ID 3640496116 包含多个子 mod；本条目文件夹 VariableSkinSFW、mod id 42_VSGirlBodySFW；18 个脚本物品，75.2 MB。"
+    },
+    "3640496116-variableskinfix": {
+      "cn": "VSGirlBody 修复",
+      "brief": "身形包的兼容修复",
+      "cat": "角色 / 外观",
+      "what": "VSGirlBody 的配套修复补丁，修正身形/服装的兼容问题；需与对应身形包一起使用。",
+      "mp": "当前 profile 为 client-only；服务端不加载，进服后会被服务端列表丢弃。",
+      "note": "文件夹 VariableSkinFix、mod id 42_VSGirlBody_Fix；6 个文件 / 84 KB，1 个 lua。"
+    },
+    "3097650043": {
+      "cn": "坐标显示",
+      "brief": "显示所在位置",
+      "cat": "UI / 工具",
+      "what": "在界面上显示当前坐标与所在区域名，方便报点和排查地图问题。",
+      "mp": "当前 profile 为 client-only；服务端不加载，进服后会被服务端列表丢弃；单人可用。",
+      "note": "mod id=BB_WhereAmI；工作坊日期快照为 2024-12-20，已有迁移前客户端加载记录；进服后是否保留不作保证。"
+    },
+    "3814486926": {
+      "cn": "3D 栅栏",
+      "brief": "把栅栏变成有厚度的 3D 模型",
+      "cat": "渲染 / Viewpoint 扩展",
+      "what": "为 Viewpoint 补充 3D 栅栏模型，让第一/第三人称下的木栅栏、金属栅栏有立体轮廓，不再只是平面贴图。",
+      "mp": "双端挂载；模型与渲染逻辑在客户端，服务端只校验 mod 列表一致。",
+      "note": "上游 1.0.0；versionMin=42.21，无 versionMax；require Viewpoint；2026-10-06 更新。"
+    },
+    "3816442251": {
+      "cn": "3D 生活道具",
+      "brief": "把室内外小物件变成 3D 模型",
+      "cat": "渲染 / Viewpoint 扩展",
+      "what": "为 Viewpoint 增加生活道具的 3D 模型与贴图，包括垃圾桶、箱子、家具等小物件，让场景里的杂物有真实体积。",
+      "mp": "双端挂载；模型资源在客户端加载，服务端只校验 mod 列表一致。",
+      "note": "上游 1.0.3；versionMin=42.21，无 versionMax；require Viewpoint、ZombieBuddy；2026-10-14 更新。"
+    },
+    "3816419379": {
+      "cn": "Raccoon City 地图家具",
+      "brief": "给地图 mod 补 3D 家具",
+      "cat": "渲染 / 地图",
+      "what": "为 Project Viewpoint 下的地图 mod 添加 Sprite Edition 的 3D 家具模型，当前页面标注适配 B42.22.2；依赖 Viewpoint 和 ZombieBuddy。",
+      "mp": "双端挂载；地图家具在客户端显示，服务端需要 mod 列表一致。",
+      "note": "上游 1.0.49；versionMin=42.0，无 versionMax；2026-11-10 更新；与具体地图 mod 搭配时先看该地图自己的依赖。"
+    },
+    "3815019204": {
+      "cn": "KI5 载具零件修复",
+      "brief": "修正 KI5 载具零件的显示位置",
+      "cat": "修复 / Viewpoint 扩展",
+      "what": "修正 Project Viewpoint 下 KI5 载具零件的显示与位置，避免零件错位或悬空；依赖 Viewpoint 和 ZombieBuddy。",
+      "mp": "双端挂载；Java 客户端补丁，服务端只校验 mod 列表；放在 KI5 载具之后加载。",
+      "note": "上游 1.3；versionMin=42.21，无 versionMax；2026-10-11 更新；jar=ViewpointVehiclePartsGuard.jar。"
+    },
+    "3819801335": {
+      "cn": "载具外壳修复",
+      "brief": "修正 Viewpoint 载具 3D 外壳",
+      "cat": "修复 / Viewpoint 扩展",
+      "what": "修正 Viewpoint 载具 3D 外壳的渲染与部件匹配，减少车身外观错位；依赖 Viewpoint 和 ZombieBuddy。",
+      "mp": "双端挂载；Java 客户端补丁，服务端只校验 mod 列表；放在载具 mod 之后加载。",
+      "note": "上游 1.1；versionMin=42.21，无 versionMax；2026-10-21 更新；jar=ViewpointVehicleShellFix.jar。"
+    },
+    "3834561718": {
+      "cn": "载具零件喷漆",
+      "brief": "给 3D 载具零件上色",
+      "cat": "修复 / Viewpoint 扩展",
+      "what": "为 Viewpoint 的载具零件增加喷漆/颜色支持，让模组载具的零件颜色更接近车身；依赖 Viewpoint 和 ZombieBuddy。",
+      "mp": "双端挂载；Java 客户端补丁，服务端只校验 mod 列表；放在载具 mod 之后加载。",
+      "note": "上游 0.5.3；versionMin=42.21，无 versionMax；2026-11-11 更新；与 VehiclePartPaint、VehiclePartPaintNoJava 互斥。"
+    },
+    "3818838508": {
+      "cn": "DLSS 帧生成",
+      "brief": "给 Viewpoint 加 DLSS 帧生成",
+      "cat": "渲染 / 性能",
+      "what": "为 Viewpoint 增加 DLSS 帧生成支持，在高分辨率下提升帧率；依赖 Viewpoint 和 ZombieBuddy。",
+      "mp": "双端挂载；实际图形功能在客户端，服务端只校验 mod 列表；需要支持 DLSS 的显卡和驱动。",
+      "note": "上游 0.1.6；versionMin=42.21，versionMax=42.22；2026-11-10 更新；实际帧率和画面需进游戏验收。"
+    },
+    "3821308495": {
+      "cn": "Viewpoint 视觉修复",
+      "brief": "修正 Viewpoint 的视觉细节",
+      "cat": "渲染 / 修复",
+      "what": "修正 Viewpoint 的材质、光照和渲染细节问题，当前版本专门适配 42.22；依赖 Viewpoint 和 ZombieBuddy。",
+      "mp": "双端挂载；渲染逻辑在客户端。",
+      "note": "上游 0.10.5；versionMin=42.22，versionMax=42.22；2026-11-10 更新。"
+    },
+    "3813929757": {
+      "cn": "地图烘焙修复",
+      "brief": "修复地图 mod 的烘焙与显示",
+      "cat": "渲染 / 地图",
+      "what": "修复 Project Viewpoint 下地图 mod 的烘焙与显示问题，当前版本支持 42.22；依赖 Viewpoint 和 ZombieBuddy。",
+      "mp": "双端挂载；实际修复在客户端。",
+      "note": "上游 0.1.4；versionMin=42.21，versionMax=42.22；2026-11-10 更新。"
+    },
+    "3815931973": {
+      "cn": "3D 货架",
+      "brief": "把货架变成有状态的 3D 模型",
+      "cat": "渲染 / Viewpoint 扩展",
+      "what": "为 Viewpoint 添加 3D 货架/展示柜模型和容器状态支持，依赖 Viewpoint 和 ZombieBuddy；Grsh 旧档案曾禁用，当前 0.4.8 已写 42.22。",
+      "mp": "双端挂载；模型与容器状态在客户端加载，服务端需要 mod 列表一致。",
+      "note": "上游 0.4.8；versionMin=42.22，versionMax=42.22；2026-11-10 更新；原 Grsh 档案为禁用，已按新版重新启用。"
+    },
+    "3810302175": {
+      "cn": "6282 模型库",
+      "brief": "3D模型与贴图素材库",
+      "cat": "渲染 / 模型资源",
+      "what": "为 Viewpoint 注册体素与 3D 物件模型包，用立体资源替代部分原版平面物件；也是房车链依赖的模型资源底层。",
+      "mp": "当前兼容候选为双端，资源注册在客户端；房车依赖该 Mod ID，不能只复制模型文件。",
+      "note": "原件 1.0，42.21.0 上限；仅 Overlay 放宽至 42.22。旧独立实验已证加载和 16 包注册及联网；1109 GPU 模型与 packs116 为所有包合计，不能证明指定 6282 模型视觉正确。"
+    },
+    "3818859807": {
+      "cn": "3D 门与车库门",
+      "brief": "门与栅门的立体模型替换",
+      "cat": "渲染 / 世界物件",
+      "what": "为 Viewpoint 提供门、栅门和车库门的 3D 模型与显示逻辑；开合、碰撞和锁定是否与 B42.22 一致仍需游戏内验证。",
+      "mp": "双端候选；渲染 Java 插件在客户端，服务端清单需一致。",
+      "note": "原件 0.2.8，42.21 上限；Overlay 只改版本上限，不改 BasileDoors3D.jar。静态通过不能排除 Java 接口变化。"
+    },
+    "3819702412": {
+      "cn": "KI5 血迹材质修复",
+      "brief": "修正KI5车辆血迹材质",
+      "cat": "修复 / 载具材质",
+      "what": "修正 Viewpoint 下 KI5 车辆沾血后的材质与贴图显示；不能代替载具零件位置或外壳修复。",
+      "mp": "双端候选；依赖 ZombieBuddy、Viewpoint 与 damnlib，实际材质功能在客户端。",
+      "note": "原件 0.1.0，42.21.0…42.21.99；Overlay 放宽至 42.22，保留 JAR 原件，尚未验证血迹效果。"
+    },
+    "3826550325": {
+      "cn": "载具驾驶舱内饰",
+      "brief": "座椅仪表与顶灯细节",
+      "cat": "渲染 / 载具内饰",
+      "what": "给支持的车种补驾驶舱座椅、饰板、仪表与顶灯等细节；它是内饰显示扩展，不等于房车可行走后厢。",
+      "mp": "双端候选；依赖 Viewpoint 与 ZombieBuddy，需对具体支持车型验收。",
+      "note": "原件 1.0.1，42.21 上限；仅元数据 Overlay 放行。仪表、顶灯与乘员显示尚未运行验证。"
+    },
+    "3821174725-gridvanshost": {
+      "cn": "厢式房车后端",
+      "brief": "车厢家具与乘员同步后端",
+      "cat": "框架 / 房车",
+      "what": "为 GridVans 处理车厢占位、家具与乘员状态同步；Java 实现位于 server 目录，不把它搬到客户端加载来绕过角色判断。",
+      "mp": "当前为双端候选挂载，服务端执行后端 JAR；需实际双客户端测试权威状态和同步。",
+      "note": "原件 0.1.8，42.21 上限；42 与 common 元数据一并 Overlay 放行，JAR 未改。ZombieBuddy 根角色补丁保留。"
+    },
+    "3821174725-gridvans": {
+      "cn": "3D 厢式房车",
+      "brief": "可摆家具的厢式房车",
+      "cat": "玩法 / 房车",
+      "what": "提供带车内空间的厢式房车，可在后厢放置家具；内饰画在车模型内部，需要 Viewpoint 与模型库。",
+      "mp": "双端候选；依赖 GridVansHost、PZVoxelStudioViewpoint、Viewpoint 与 ZombieBuddy，不能单独启用。",
+      "note": "原件 0.1.8，42.21 上限；仅元数据 Overlay。上下车、行走、家具、水电与保存重进均待验证。"
+    },
+    "3825724093": {
+      "cn": "DeadWorks 载具框架",
+      "brief": "房车内饰水电家具内核",
+      "cat": "框架 / 房车",
+      "what": "为 DeadWorks Nomad 与 Dale 房车提供车内行走、门窗踏板、座椅家具、水电与装甲等系统。",
+      "mp": "双端候选；依赖 ZombieBuddy、Viewpoint、6282，状态同步与存档兼容必须单独验收。",
+      "note": "原件 1.0.4，42.21 上限；Overlay 只放宽元数据，未修改 Java/Lua 行为；不与旧 GridRVHost 分支混装。"
+    },
+    "3826684062": {
+      "cn": "DeadWorks 沙盒调节",
+      "brief": "装甲水箱电池车重可调",
+      "cat": "玩法 / 房车设置",
+      "what": "为 DeadWorksVehicleFramework 增加装甲、水箱、电池和车重等沙盒选项。",
+      "mp": "双端候选；自身没有 42.21 上限，但必须带 DeadWorksVehicleFramework 及其完整依赖链。",
+      "note": "原件 0.0.7，min42.21、无 max；该条不需版本 Overlay，仍受房车框架兼容性限制。"
+    },
+    "3820158673-deadworksnomadrv": {
+      "cn": "DeadWorks Nomad 房车",
+      "brief": "Nomad房车的DeadWorks分支",
+      "cat": "载具 / 房车",
+      "what": "提供依赖 DeadWorks 新框架的 Nomad 房车分支及配套物品；不与同一工坊包内的旧 GridRV/Legacy 分支混装。",
+      "mp": "双端候选；依赖 DeadWorksVehicleFramework 与 6282，车内状态和保存读取仍待测试。",
+      "note": "原件 0.9.2，42.21 上限；仅元数据 Overlay。未因静态依赖齐全而宣称房车运行正常。"
+    },
+    "3820158673-deadworksdalerv": {
+      "cn": "DeadWorks Dale 房车",
+      "brief": "Dale房车的DeadWorks分支",
+      "cat": "载具 / 房车",
+      "what": "提供 DeadWorks Dale's Chieftain RV 分支；还依赖同包 DeadWorksNomadRV，不选择旧 Legacy/替代分支。",
+      "mp": "双端候选；依赖 DeadWorksVehicleFramework、DeadWorksNomadRV 与 6282。",
+      "note": "原件 0.2.2，42.21 上限；仅元数据 Overlay。外观、车内交互和持久化未验收。"
+    },
+    "3640496116-variableskinboobbounce": {
+      "cn": "VSGirlBody 动态身体",
+      "brief": "身体模型动态效果",
+      "cat": "角色 / 动画",
+      "what": "为 VSGirlBody 身体模型提供动态效果扩展；这是现有工坊包中的子模块，不另外加入其他身体分支。",
+      "mp": "当前双端候选；依赖 ZombieBuddy，与 VSGirlBodyExtension 互斥。",
+      "note": "原件 0.6.1-test，42.21 上限；只改版本元数据。身体网格、动作和联机显示未验证。"
+    },
+    "3640496116-variableskinboobbounceviewpoint": {
+      "cn": "VSGirlBody 动态视角桥接",
+      "brief": "动态身体的Viewpoint桥接",
+      "cat": "角色 / 渲染桥接",
+      "what": "把动态身体效果接入 Viewpoint 视角，需要先启用基础动态模块。",
+      "mp": "当前双端候选；依赖 ZombieBuddy、Viewpoint 与 VariableSkinBoobBounce，真实 Mod ID 含括号后缀，必须原样保留。",
+      "note": "原件 0.6.0-test，42.21 上限；只改版本元数据。是否匹配当前官方 Viewpoint 的 Java 接口尚未运行验证。"
+    }
+  }
+}

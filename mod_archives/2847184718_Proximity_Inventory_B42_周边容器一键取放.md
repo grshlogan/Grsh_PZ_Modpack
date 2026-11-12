@@ -1,6 +1,7 @@
 # 就近存取（Proximity Inventory B42）
 
-**周边容器一键取放** · 分类：UI / 便利 · 2847184718 · 启用 · 加载位次 44
+**周边容器一键取放** · 分类：UI / 便利 · `2847184718` · 启用 · 加载位次 27
+归属：**日常组合**；档案视图 `b422-compat`。
 
 ## 它做什么
 
@@ -13,10 +14,13 @@
 | 工作坊 ID | `2847184718` |
 | mod id | `ProximityInventory` |
 | 文件夹 | `ProximityInventory` |
-| 版本 / 适配 | `-` … `-` |
+| Mod 版本 | `-` |
+| 原件适配 | `-` … `-` |
+| 当前生效适配 | `-` … `-`（原件） |
+| 元数据来源 | `42/mod.info` |
 | 作者 | - |
 | 工作坊更新时间 | 2026-08-30 |
-| 分发端 | both |
+| 分发端 | both（双端） |
 | 体积 / 文件 | 685.9 KB · 57 文件（lua 6，client 6，server 0；贴图 6；模型 0；翻译 41） |
 
 ## 依赖与冲突
@@ -31,17 +35,20 @@
 
 ## 双端与联机
 
-双端；服务端负责校验距离，属于服务端授权型便利 mod。
+双端；服务端校验距离，属于服务端授权型便利 mod。
 
-本机实测文件构成：客户端有 lua；服务端无 lua（只挂载）。
+当前 profile：both（双端）。
+
+本机文件构成：客户端有 lua；服务端无 lua（只挂载）。
 
 ## 实测与排查
 
-B42 重制版；物品移动走的是原版容器接口，不复制物品。
+B42 重制版；物品移动走原版容器接口，不复制物品；无版本字段。
 
 ```
-python lab.py check --profile play
-grep -a 'ProximityInventory' runs/<trial>/console.log
+cd A004
+python lab.py check --profile b422-compat
+grep -a 'ProximityInventory' runs/<trial>/*console.log
 ```
 
 ## 作者原话
@@ -53,6 +60,5 @@ This is the description of Proximity Inventory.
 ## 来源
 
 - 工作坊：`https://steamcommunity.com/sharedfiles/filedetails/?id=2847184718`
-- 本地快照：`workspace/mods_library/2847184718/mods/ProximityInventory`
-- 档案生成：`python tools/mod_archive.py --profile play`
-
+- 本地原件：`A004/workspace/mods_library/2847184718/mods/ProximityInventory`
+- 档案生成：`python tools/mod_archive.py --profile b422-compat`

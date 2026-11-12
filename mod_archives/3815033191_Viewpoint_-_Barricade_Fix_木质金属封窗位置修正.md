@@ -1,6 +1,7 @@
 # 封窗木条修复（Viewpoint - Barricade Fix）
 
-**木质/金属封窗位置修正** · 分类：渲染 / 修复 · 3815033191 · 启用 · 加载位次 6
+**木质/金属封窗位置修正** · 分类：渲染 / 修复 · `3815033191` · 启用 · 加载位次 7
+归属：**日常组合**；档案视图 `b422-compat`。
 
 ## 它做什么
 
@@ -13,10 +14,13 @@
 | 工作坊 ID | `3815033191` |
 | mod id | `ViewpointBarricade` |
 | 文件夹 | `ViewpointBarricade` |
-| 版本 / 适配 | `42.21` … `-` |
+| Mod 版本 | `1.0` |
+| 原件适配 | `42.21` … `-` |
+| 当前生效适配 | `42.21` … `-`（原件） |
+| 元数据来源 | `42/mod.info` |
 | 作者 | GamerKreep |
-| 工作坊更新时间 | 2026-10-12 |
-| 分发端 | both |
+| 工作坊更新时间 | 2026-10-11 |
+| 分发端 | both（双端） |
 | 体积 / 文件 | 278.3 KB · 14 文件（lua 0，client 0，server 0；贴图 2；模型 0；翻译 0；Java 源码 8、jar/class 1） |
 
 ## 依赖与冲突
@@ -33,15 +37,18 @@
 
 双端挂载；Java 补丁。
 
-本机实测文件构成：客户端无 lua，但带 Java 源码补丁；服务端无 lua（只挂载）。
+当前 profile：both（双端）。
+
+本机文件构成：客户端无 lua，但带 Java 源码补丁；服务端无 lua（只挂载）。
 
 ## 实测与排查
 
-兼容 Fitted Barricades / Fenced Barricades；jar=ViewpointBarricades.jar。
+兼容 Fitted Barricades / Fenced Barricades；jar=ViewpointBarricades.jar；需 Viewpoint。
 
 ```
-python lab.py check --profile play
-grep -a 'ViewpointBarricade' runs/<trial>/console.log
+cd A004
+python lab.py check --profile b422-compat
+grep -a 'ViewpointBarricade' runs/<trial>/*console.log
 ```
 
 ## 作者原话
@@ -53,6 +60,5 @@ Patch for Project Viewpoint to fix barricade placements and restore their origin
 ## 来源
 
 - 工作坊：`https://steamcommunity.com/sharedfiles/filedetails/?id=3815033191`
-- 本地快照：`workspace/mods_library/3815033191/mods/ViewpointBarricade`
-- 档案生成：`python tools/mod_archive.py --profile play`
-
+- 本地原件：`A004/workspace/mods_library/3815033191/mods/ViewpointBarricade`
+- 档案生成：`python tools/mod_archive.py --profile b422-compat`

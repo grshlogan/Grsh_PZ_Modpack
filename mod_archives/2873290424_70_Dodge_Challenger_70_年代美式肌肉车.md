@@ -1,6 +1,7 @@
-# '70 Dodge Challenger（'70 Dodge Challenger）
+# '70 Dodge Challenger
 
-**70 年代美式肌肉车** · 分类：载具 / 轿车 · 2873290424 · 启用 · 加载位次 32
+**70 年代美式肌肉车** · 分类：载具 / 轿车 · `2873290424` · 启用 · 加载位次 34
+归属：**日常组合**；档案视图 `b422-compat`。
 
 ## 它做什么
 
@@ -13,10 +14,13 @@
 | 工作坊 ID | `2873290424` |
 | mod id | `70dodge` |
 | 文件夹 | `70dodge` |
-| 版本 / 适配 | `42.0.0` … `-` |
+| Mod 版本 | `-` |
+| 原件适配 | `42.13.0` … `-` |
+| 当前生效适配 | `42.13.0` … `-`（原件） |
+| 元数据来源 | `42.13/mod.info` |
 | 作者 | KI5 |
 | 工作坊更新时间 | 2026-03-21 |
-| 分发端 | both |
+| 分发端 | both（双端） |
 | 体积 / 文件 | 18.2 MB · 313 文件（lua 24，client 9，server 9；贴图 199；模型 6；翻译 10） |
 
 ## 依赖与冲突
@@ -27,19 +31,10 @@
 
 ## 内容清单
 
-脚本物品 **39** 条：
+脚本物品 **30** 条：
 
 | 完整 id | 显示名 | 类型 |
 | --- | --- | --- |
-| `Base.1` | - | - |
-| `Base.2` | - | - |
-| `Base.4` | - | - |
-| `Base.9` | - | - |
-| `Base.10` | - | - |
-| `Base.8` | - | - |
-| `Base.3` | - | - |
-| `Base.7` | - | - |
-| `Base.6` | - | - |
 | `Base.DodgeMagazine` | 70 Dodge Challenger Auto Manual | Literature |
 | `Base.DodgeFrontSeat3` | 70 Dodge Challenger Front Seat | Normal |
 | `Base.DodgeRearSeat3` | 70 Dodge Challenger Rear Seat | Normal |
@@ -73,21 +68,24 @@
 
 载具脚本 5 条：`70dodgeBG`，`70dodgeOP`，`70dodgePD`，`70dodgeRT`，`70dodgeTA`
 
-配方 33 条：`70dodge`，`70dodgeB`，`70dodgeBMakeFrontWindshieldArmor`，`70dodgeMakeFrontBullbarA`，`70dodgeMakeFrontBullbarB`，`70dodgeMakeFrontBullbarC`，`70dodgeMakeFrontBumper`，`70dodgeMakeFrontDoor`，`70dodgeMakeFrontSeat`，`70dodgeMakeFrontSideWindow`，`70dodgeMakeFrontWindowArmor`，`70dodgeMakeFrontWindshield`，`70dodgeMakeFrontWindshieldArmor`，`70dodgeMakeRearBullbarA`，`70dodgeMakeRearBullbarB`，`70dodgeMakeRearBullbarC`，`70dodgeMakeRearBumper`，`70dodgeMakeRearSeat`，`70dodgeMakeRearSideWindow`，`70dodgeMakeRearWindshield`，`70dodgeMakeRearWindshieldArmor`，`70dodgeMakeRoofrack`，`70dodgeMakeTire`，`70dodgeMakeTrunkLid`，`70dodgePD`，`70dodgePDMakeHood`，`70dodgeRT`，`70dodgeRTMakeHood`，`70dodgeTA`，`70dodgeTAMakeHood`
+配方 33 条：`70dodge`，`70dodgeB`，`70dodgeBMakeFrontWindshieldArmor`，`70dodgeMakeFrontBullbarA`，`70dodgeMakeFrontBullbarB`，`70dodgeMakeFrontBullbarC`，`70dodgeMakeFrontBumper`，`70dodgeMakeFrontDoor`，`70dodgeMakeFrontSeat`，`70dodgeMakeFrontSideWindow`，`70dodgeMakeFrontWindowArmor`，`70dodgeMakeFrontWindshield`，`70dodgeMakeFrontWindshieldArmor`，`70dodgeMakeRearBullbarA`，`70dodgeMakeRearBullbarB`，`70dodgeMakeRearBullbarC`，`70dodgeMakeRearBumper`，`70dodgeMakeRearSeat`，`70dodgeMakeRearSideWindow`，`70dodgeMakeRearWindshield`，`70dodgeMakeRearWindshieldArmor`，`70dodgeMakeRoofrack`，`70dodgeMakeTire`，`70dodgeMakeTrunkLid`，`70dodgePD`，`70dodgePDMakeHood`，`70dodgeRT`，`70dodgeRTMakeHood`，`70dodgeTA`，`70dodgeTAMakeHood` … 其余 3 条
 
 ## 双端与联机
 
 双端都要装。
 
-本机实测文件构成：客户端有 lua；服务端有 lua。
+当前 profile：both（双端）。
+
+本机文件构成：客户端有 lua；服务端有 lua。
 
 ## 实测与排查
 
-18.2 MB；require damnlib；本轮新下载。
+require damnlib；39 个脚本物品、5 个载具脚本、33 条配方。
 
 ```
-python lab.py check --profile play
-grep -a '70dodge' runs/<trial>/console.log
+cd A004
+python lab.py check --profile b422-compat
+grep -a '70dodge' runs/<trial>/*console.log
 ```
 
 ## 作者原话
@@ -99,6 +97,5 @@ This mod adds Dodge Challenger, a muscle car from 1970
 ## 来源
 
 - 工作坊：`https://steamcommunity.com/sharedfiles/filedetails/?id=2873290424`
-- 本地快照：`workspace/mods_library/2873290424/mods/70dodge`
-- 档案生成：`python tools/mod_archive.py --profile play`
-
+- 本地原件：`A004/workspace/mods_library/2873290424/mods/70dodge`
+- 档案生成：`python tools/mod_archive.py --profile b422-compat`

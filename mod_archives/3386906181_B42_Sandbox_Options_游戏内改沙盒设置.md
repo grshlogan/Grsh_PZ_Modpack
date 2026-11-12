@@ -1,6 +1,7 @@
 # 沙盒选项（[B42] Sandbox Options）
 
-**游戏内改沙盒设置** · 分类：工具 / 管理 · 3386906181 · 启用 · 加载位次 45
+**游戏内改沙盒设置** · 分类：工具 / 管理 · `3386906181` · 启用 · 加载位次 29
+归属：**日常组合**；档案视图 `b422-compat`。
 
 ## 它做什么
 
@@ -13,10 +14,13 @@
 | 工作坊 ID | `3386906181` |
 | mod id | `SandboxSettings` |
 | 文件夹 | `B42SandboxOptions` |
-| 版本 / 适配 | `42.0.0` … `-` |
+| Mod 版本 | `-` |
+| 原件适配 | `42.20.0` … `-` |
+| 当前生效适配 | `42.20.0` … `-`（原件） |
+| 元数据来源 | `42.20/mod.info` |
 | 作者 | Zky |
 | 工作坊更新时间 | 2026-10-03 |
-| 分发端 | both |
+| 分发端 | both（双端） |
 | 体积 / 文件 | 8.9 MB · 193 文件（lua 3，client 3，server 0；贴图 21；模型 0；翻译 162） |
 
 ## 依赖与冲突
@@ -33,15 +37,18 @@
 
 双端；联机下只有管理员能改。
 
-本机实测文件构成：客户端有 lua；服务端无 lua（只挂载）。
+当前 profile：both（双端）。
+
+本机文件构成：客户端有 lua；服务端无 lua（只挂载）。
 
 ## 实测与排查
 
-8.9 MB，带 42 / 42.15 / 42.20 三档适配目录。
+带 42 / 42.15 / 42.20 三档适配目录；当前 profile 双端加载。
 
 ```
-python lab.py check --profile play
-grep -a 'B42SandboxOptions' runs/<trial>/console.log
+cd A004
+python lab.py check --profile b422-compat
+grep -a 'SandboxSettings' runs/<trial>/*console.log
 ```
 
 ## 作者原话
@@ -53,6 +60,5 @@ Change Sandbox Settings in-game
 ## 来源
 
 - 工作坊：`https://steamcommunity.com/sharedfiles/filedetails/?id=3386906181`
-- 本地快照：`workspace/mods_library/3386906181/mods/B42SandboxOptions`
-- 档案生成：`python tools/mod_archive.py --profile play`
-
+- 本地原件：`A004/workspace/mods_library/3386906181/mods/B42SandboxOptions`
+- 档案生成：`python tools/mod_archive.py --profile b422-compat`

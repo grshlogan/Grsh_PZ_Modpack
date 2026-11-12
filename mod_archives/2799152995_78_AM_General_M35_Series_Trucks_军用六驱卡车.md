@@ -1,6 +1,7 @@
 # '78 AM General M35 军卡（'78 AM General M35 Series Trucks）
 
-**军用六驱卡车** · 分类：载具 / 军用 · 2799152995 · 启用 · 加载位次 40
+**军用六驱卡车** · 分类：载具 / 军用 · `2799152995` · 启用 · 加载位次 42
+归属：**日常组合**；档案视图 `b422-compat`。
 
 ## 它做什么
 
@@ -13,10 +14,13 @@
 | 工作坊 ID | `2799152995` |
 | mod id | `78amgeneralM35A2` |
 | 文件夹 | `78amgeneralM35A2` |
-| 版本 / 适配 | `42.0.0` … `-` |
+| Mod 版本 | `-` |
+| 原件适配 | `42.13.0` … `-` |
+| 当前生效适配 | `42.13.0` … `-`（原件） |
+| 元数据来源 | `42.13/mod.info` |
 | 作者 | KI5 |
 | 工作坊更新时间 | 2026-05-15 |
-| 分发端 | both |
+| 分发端 | both（双端） |
 | 体积 / 文件 | 28.6 MB · 317 文件（lua 23，client 9，server 8；贴图 198；模型 6；翻译 8） |
 
 ## 依赖与冲突
@@ -27,20 +31,10 @@
 
 ## 内容清单
 
-脚本物品 **45** 条：
+脚本物品 **34** 条：
 
 | 完整 id | 显示名 | 类型 |
 | --- | --- | --- |
-| `Base.2` | - | - |
-| `Base.4` | - | - |
-| `Base.9` | - | - |
-| `Base.1` | - | - |
-| `Base.8` | - | - |
-| `Base.3` | - | - |
-| `Base.7` | - | - |
-| `Base.10` | - | - |
-| `Base.5` | - | - |
-| `Base.6` | - | - |
 | `Base.M35A2Magazine` | 78 AM General M35A2 Auto Manual | Literature |
 | `Base.M35A2Muffler1` | 78 AM General M35A2 Muffler | Normal |
 | `Base.M35A2EngineDoor2` | 78 AM General M35A2 Hood | Normal |
@@ -75,7 +69,6 @@
 | `Base.M35A2WindshieldArmor1_Item` | 78 AM General M35A2 Windshield Armor | Normal |
 | `Base.M35A2DoorArmor1_Item` | 78 AM General M35A2 Door Armor | Normal |
 | `Base.M35A2Mudflaps1_Item` | 78 AM General M35A2 Mudflaps | Normal |
-| `Base.500_Water_Tank2` | Water Storage Tank | Normal |
 
 载具脚本 5 条：`78amgeneralM35A2`，`78amgeneralM35A2Burnt`，`78amgeneralM49A2C`，`78amgeneralM50A3`，`78amgeneralM62`
 
@@ -85,15 +78,18 @@
 
 双端都要装。
 
-本机实测文件构成：客户端有 lua；服务端有 lua。
+当前 profile：both（双端）。
+
+本机文件构成：客户端有 lua；服务端有 lua。
 
 ## 实测与排查
 
-33.2 MB；require damnlib；变体按需启用。
+require damnlib；45 个脚本物品、5 个载具脚本、20 条配方；当前包 30.0 MB，变体子 mod 未启用。
 
 ```
-python lab.py check --profile play
-grep -a '78amgeneralM35A2' runs/<trial>/console.log
+cd A004
+python lab.py check --profile b422-compat
+grep -a '78amgeneralM35A2' runs/<trial>/*console.log
 ```
 
 ## 作者原话
@@ -105,6 +101,5 @@ This mod adds AM General M35 Series, Deuce and a Half Trucks from 1978
 ## 来源
 
 - 工作坊：`https://steamcommunity.com/sharedfiles/filedetails/?id=2799152995`
-- 本地快照：`workspace/mods_library/2799152995/mods/78amgeneralM35A2`
-- 档案生成：`python tools/mod_archive.py --profile play`
-
+- 本地原件：`A004/workspace/mods_library/2799152995/mods/78amgeneralM35A2`
+- 档案生成：`python tools/mod_archive.py --profile b422-compat`

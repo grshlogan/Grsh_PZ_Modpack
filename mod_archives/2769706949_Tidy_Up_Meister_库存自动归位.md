@@ -1,6 +1,7 @@
 # 自动整理（Tidy Up Meister）
 
-**库存自动归位** · 分类：UI / 整理 · 2769706949 · 启用 · 加载位次 48
+**库存自动归位** · 分类：UI / 整理 · `2769706949` · 启用 · 加载位次 26
+归属：**日常组合**；档案视图 `b422-compat`。
 
 ## 它做什么
 
@@ -13,10 +14,13 @@
 | 工作坊 ID | `2769706949` |
 | mod id | `P4TidyUpMeister` |
 | 文件夹 | `P4TidyUpMeister` |
-| 版本 / 适配 | `42.0.0` … `-` |
+| Mod 版本 | `2.0.8` |
+| 原件适配 | `42.20.0` … `-` |
+| 当前生效适配 | `42.20.0` … `-`（原件） |
+| 元数据来源 | `42.20/mod.info` |
 | 作者 | PePePePePeil |
 | 工作坊更新时间 | 2026-10-10 |
-| 分发端 | both |
+| 分发端 | both（双端） |
 | 体积 / 文件 | 1.3 MB · 119 文件（lua 12，client 8，server 0；贴图 9；模型 0；翻译 92） |
 
 ## 依赖与冲突
@@ -33,26 +37,28 @@
 
 双端；只改本地排序视图。
 
-本机实测文件构成：客户端有 lua；服务端无 lua（只挂载）。
+当前 profile：both（双端）。
+
+本机文件构成：客户端有 lua；服务端无 lua（只挂载）。
 
 ## 实测与排查
 
-mod id 是 P4TidyUpMeister。
+mod id 是 P4TidyUpMeister；已有迁移前 B42.22.2 加载记录。
 
 ```
-python lab.py check --profile play
-grep -a 'P4TidyUpMeister' runs/<trial>/console.log
+cd A004
+python lab.py check --profile b422-compat
+grep -a 'P4TidyUpMeister' runs/<trial>/*console.log
 ```
 
 ## 作者原话
 
 ```
-Automatically returns to the original equipment when the operation is completed.
+Automatically restores your equipment and returns temporarily moved items after actions.
 ```
 
 ## 来源
 
 - 工作坊：`https://steamcommunity.com/sharedfiles/filedetails/?id=2769706949`
-- 本地快照：`workspace/mods_library/2769706949/mods/P4TidyUpMeister`
-- 档案生成：`python tools/mod_archive.py --profile play`
-
+- 本地原件：`A004/workspace/mods_library/2769706949/mods/P4TidyUpMeister`
+- 档案生成：`python tools/mod_archive.py --profile b422-compat`

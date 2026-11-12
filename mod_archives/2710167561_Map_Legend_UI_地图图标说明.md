@@ -1,6 +1,7 @@
 # 地图图例（Map Legend UI）
 
-**地图图标说明** · 分类：UI / 地图 · 2710167561 · 启用 · 加载位次 49
+**地图图标说明** · 分类：UI / 地图 · `2710167561` · 启用 · 加载位次 28
+归属：**日常组合**；档案视图 `b422-compat`。
 
 ## 它做什么
 
@@ -13,10 +14,13 @@
 | 工作坊 ID | `2710167561` |
 | mod id | `MapLegendUI` |
 | 文件夹 | `MapLegendUI` |
-| 版本 / 适配 | `41.65` … `-` |
+| Mod 版本 | `2.2.1` |
+| 原件适配 | `41.65` … `-` |
+| 当前生效适配 | `41.65` … `-`（原件） |
+| 元数据来源 | `42/mod.info` |
 | 作者 | NikGamer |
 | 工作坊更新时间 | 2026-03-14 |
-| 分发端 | both |
+| 分发端 | both（双端） |
 | 体积 / 文件 | 787.8 KB · 94 文件（lua 2，client 2，server 0；贴图 22；模型 0；翻译 68） |
 
 ## 依赖与冲突
@@ -31,17 +35,20 @@
 
 ## 双端与联机
 
-双端；纯客户端显示。
+双端挂载；客户端显示。
 
-本机实测文件构成：客户端有 lua；服务端无 lua（只挂载）。
+当前 profile：both（双端）。
+
+本机文件构成：客户端有 lua；服务端无 lua（只挂载）。
 
 ## 实测与排查
 
-老 mod，B42 仍可用。
+mod.info versionMin=41.65；迁移前 B42.22.2 已加载，地图图例的实际界面仍待验收。
 
 ```
-python lab.py check --profile play
-grep -a 'MapLegendUI' runs/<trial>/console.log
+cd A004
+python lab.py check --profile b422-compat
+grep -a 'MapLegendUI' runs/<trial>/*console.log
 ```
 
 ## 作者原话
@@ -53,6 +60,5 @@ Adds a legend from town maps to in-game world map.
 ## 来源
 
 - 工作坊：`https://steamcommunity.com/sharedfiles/filedetails/?id=2710167561`
-- 本地快照：`workspace/mods_library/2710167561/mods/MapLegendUI`
-- 档案生成：`python tools/mod_archive.py --profile play`
-
+- 本地原件：`A004/workspace/mods_library/2710167561/mods/MapLegendUI`
+- 档案生成：`python tools/mod_archive.py --profile b422-compat`

@@ -1,6 +1,7 @@
 # 分类整理（Better Sorting）
 
-**库存分类菜单** · 分类：UI / 整理 · 2313387159 · 启用 · 加载位次 43
+**库存分类菜单** · 分类：UI / 整理 · `2313387159` · 启用 · 加载位次 25
+归属：**日常组合**；档案视图 `b422-compat`。
 
 ## 它做什么
 
@@ -13,10 +14,13 @@
 | 工作坊 ID | `2313387159` |
 | mod id | `BetterSortCC` |
 | 文件夹 | `BetterSorting` |
-| 版本 / 适配 | `-` … `-` |
+| Mod 版本 | `2.1.5` |
+| 原件适配 | `-` … `-` |
+| 当前生效适配 | `-` … `-`（原件） |
+| 元数据来源 | `42/mod.info` |
 | 作者 | ChthonicKnight |
 | 工作坊更新时间 | 2026-09-12 |
-| 分发端 | both |
+| 分发端 | both（双端） |
 | 体积 / 文件 | 1.7 MB · 149 文件（lua 78，client 63，server 0；贴图 4；模型 0；翻译 59） |
 
 ## 依赖与冲突
@@ -31,17 +35,20 @@
 
 ## 双端与联机
 
-双端；纯 UI，不影响物品数据。
+双端；纯 UI，不改物品数据。
 
-本机实测文件构成：客户端有 lua；服务端无 lua（只挂载）。
+当前 profile：both（双端）。
+
+本机文件构成：客户端有 lua；服务端无 lua（只挂载）。
 
 ## 实测与排查
 
-老牌 mod（B41 起就在用），B42 适配正常。
+老牌 mod（B41 起就在用）；已有迁移前 B42.22.2 加载记录，无版本上下限。
 
 ```
-python lab.py check --profile play
-grep -a 'BetterSorting' runs/<trial>/console.log
+cd A004
+python lab.py check --profile b422-compat
+grep -a 'BetterSortCC' runs/<trial>/*console.log
 ```
 
 ## 作者原话
@@ -53,6 +60,5 @@ v2.1.5 - Complete overhaul to item categories and various name tweaks.
 ## 来源
 
 - 工作坊：`https://steamcommunity.com/sharedfiles/filedetails/?id=2313387159`
-- 本地快照：`workspace/mods_library/2313387159/mods/BetterSorting`
-- 档案生成：`python tools/mod_archive.py --profile play`
-
+- 本地原件：`A004/workspace/mods_library/2313387159/mods/BetterSorting`
+- 档案生成：`python tools/mod_archive.py --profile b422-compat`
