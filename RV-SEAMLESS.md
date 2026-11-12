@@ -1,5 +1,7 @@
 # 无缝房车：只有 Viewpoint 3D 能做到“走进去”，其它路线都是妥协
 
+> 本文保留 2026-11-09、B42.21 的调研快照；下文“未装”“缺框架”等状态已过期，路线结论也只覆盖当时调查的对象。当前 DeadWorks 房车链已并入日常组合，补丁证据和待实测范围见[兼容说明](COMPATIBILITY.md)，实际目录及完整 ID 见[当前清单](README.md)。
+
 数据时间 2026-11-09，游戏 42.21。问题：社区是否存在「原版视角和 Viewpoint 视角都能无缝」的房车？结论先说：**没有**。真正的无缝（走进车里、镜头跟着人、家具和储物随车移动）必须走 Viewpoint 3D 渲染；另外两条路线分别是「开顶＋等距」和「传送到独立地图格」。
 
 ## 1. 三条技术路线
@@ -29,7 +31,7 @@ Real Vehicle Interiors 走的是完全不同的路子（隐藏车顶 + 自定义
 | **3825724093** | DeadWorks Vehicle Framework | 0.4 MB | ❗未装 | 新 RV 的必需框架；可行走内饰、水电、家具、门槛/舱门、MP 同步；jar 在 `media/java/`，两端都加载 |
 | **3821174725** | Viewpoint - 3D RV Van | 54.5 MB | ❗未装 | Courier Duo 厢货，2×5 空货舱自己装修；`GridVans`（客户端 jar）+ `GridVansHost`（服务端 jar）；MP 标 dedicated server |
 | 3826684062 | DeadWorks Framework Tweaks | 0.1 MB | 可选 | 给框架加沙盒页（装甲耐久、水箱、电池、车重） |
-| 3826550325 | Viewpoint Vehicle Interiors | 96.3 MB | 已评估 | 只是**座舱细节**（座椅/仪表/顶灯），不是可行走内饰 |
+| 3826550325 | Viewpoint Vehicle Interiors | 96.3 MB | 已删除 | 只是**座舱细节**（座椅/仪表/顶灯），不是可行走内饰；2026-11-12 按 Owner 指示从组合与文档中删除 |
 | 3826175971 | Motorious Zone 车辆内饰 | 27.0 MB | 已评估 | 同上，外观内饰件 |
 
 本地 `3820158673` 里已经带了 `DeadWorksNomadRV 0.9.2`、`DeadWorksDaleRV 0.2.2`，版本与商店一致；只是缺框架，所以在 pack 里保持禁用（备注也这么写的）。

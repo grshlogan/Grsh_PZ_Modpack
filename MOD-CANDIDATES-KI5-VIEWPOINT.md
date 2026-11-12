@@ -1,6 +1,8 @@
 # KI5 车系与 Viewpoint 修复：候选清单
 自动取自 19 个 Viewpoint 合集的 945 条工坊元数据（`workspace/collections/items.json`），作者判定用 Steam creator id `76561198089039119`（KI5）。共 **100 个 KI5 条目**。社区热度榜（151 个合集的收录数）见 [`KI5-RECOMMENDED.md`](KI5-RECOMMENDED.md)。
 
+> 状态列是 2026-11-09 的快照，不要当当前清单用；实际归属以 `workspace/defs/*/pack.json` 为准。2026-11-12 深夜 Owner 授权整批并入 KI5 车队后，日常（`b422-main`）已有 **39 个 KI5 车型 / 拖挂工坊条目 + `KI5trailers` + `isoContainers`**：原有 11 个条目（M998、M35A2、S10、J10、B700、E-150、W460、揽胜、Challenger、GT-R R32、F350 救护车）+ 新并入 28 个条目（消防泵车、99/92 两代 Crown Vic 警车、LTD、Caprice、Bronco、YJ、XJ、Trooper、Hilux、Ranger、F-Series、Beetle、Type 2、Volvo 200、Taurus、Caravan、Geo Metro、GT500、Camaro、Charger、M923、M151A2、CUCV、Oshkosh M911、8N 拖拉机、高尔夫球车、Campers!）。这些是工坊条目数，具体整车定义数量见[当前清单](README.md)。另有 `Visible Vehicle Coupling`（3807182783）与 `Car Battery Charger 3D`（3822775022）两件功能件。`Vehicle Aim Roof Fix`（3781616141）与 `Vehicle Enter/Exit Fix`（3785695033）已于同日随 Drive-By Shooting 加入；`Surface Fix`（3814398576）仍未安装（`ClassCastException at WallMesher.wall:80`）；`Visible Vehicle Coupling - Viewpoint Addon`（3824354252）尚未装，作者归属未核验，不标为官方补丁。
+
 ## 1. KI5 车系（按年份）
 | 工坊 ID | 名称 | 体积 | 合集数 | 状态 |
 |---|---|---|---|---|
@@ -112,7 +114,7 @@
 | 3808100388 | KI5 Vehicle Performance Patch (Unofficial) | 0.02 MB | 联机可用 |  |
 | 3817276586 | Project Viewpoint: Vehicle Top Speed | 0.03 MB | 联机可用 |  |
 | 3812659488 | Viewpoint - Papa_Chad Vehicle Compatibility [B42.21] | 0.04 MB | 未标注 |  |
-| 3819801335 | KI5 Vehicle Panels Fix [Project Viewpoint] | 0.04 MB | 未标注 |  |
+| 3819801335 | Viewpoint - Vehicle Shell Fix（旧表误标为 "KI5 Vehicle Panels Fix"） | 0.04 MB | 未标注 | 已装（日常，v1.1） |
 | 3819702412 | Project Viewpoint - KI5 Blood Texture Fix | 0.07 MB | 未标注 |  |
 | 3815019204 | Project Viewpoint - KI5 Vehicle Parts Fix | 0.17 MB | 未标注 |  |
 | 3824354252 | Visible Vehicle Coupling - Viewpoint Addon | 0.32 MB | 提到联机 |  |
@@ -123,7 +125,7 @@
 | 3807182783 | Visible Vehicle Coupling | 4.42 MB | 联机可用 |  |
 | 3783874874 | [B42.20+] Vehicle Weapon Clipping Fix | 5.69 MB | 作者说不支持联机 |  |
 | 3826175971 | Viewpoint [The Motorious Zone Vehicle Pack Interiors] | 26.98 MB | 提到联机 |  |
-| 3826550325 | Viewpoint Vehicle Interiors | 96.30 MB | 提到联机 |  |
+| 3826550325 | Viewpoint Vehicle Interiors | 96.30 MB | 提到联机 | 已于 2026-11-12 按 Owner 指示删除（组合、原件、档案一并移除） |
 
 ## 3. Viewpoint 修复类（核心 / 视觉 / 性能）
 | 工坊 ID | 名称 | 体积 | 联机 | 状态 |
@@ -141,7 +143,7 @@
 | 3819914793 | Fred's Night Vision Googles + Viewpoint compatibility patch | 0.06 MB | 联机可用 |  |
 | 3812896812 | Helicopter Fix - Project Viewpoint | 0.22 MB | 未标注 |  |
 | 3813760573 | HorseMod + Viewpoint Controls Patch | 0.26 MB | 未标注 |  |
-| 3819801335 | KI5 Vehicle Panels Fix [Project Viewpoint] | 0.04 MB | 未标注 |  |
+| 3819801335 | Viewpoint - Vehicle Shell Fix（旧表误标为 "KI5 Vehicle Panels Fix"） | 0.04 MB | 未标注 | 已装（日常，v1.1） |
 | 3811344119 | Light Fix - Project Viewpoint | 0.15 MB | 未标注 |  |
 | 3828762052 | Photon Viewpoint Fix | 3.57 MB | 未标注 |  |
 | 3811640626 | Project Viewpoint - 3D Tracer Fix | 0.03 MB | 作者说不支持联机 |  |
